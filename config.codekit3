@@ -154,8 +154,8 @@
       "ft" : 2048,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/Users\/a374\/Documents\/GitHub\/Web-3-Homework-S23\/deploy\/checkout.html",
-      "oF" : 6
+      "oAP" : "\/deploy\/checkout.html",
+      "oF" : 2
     },
     "\/dev\/content\/about.kit" : {
       "cB" : 0,
@@ -338,8 +338,8 @@
       "ft" : 2048,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/Users\/a374\/Documents\/GitHub\/Web-3-Homework-S23\/deploy\/index.html",
-      "oF" : 6
+      "oAP" : "\/deploy\/index.html",
+      "oF" : 2
     },
     "\/dev\/js\/scripts.js" : {
       "bF" : 0,
@@ -582,8 +582,8 @@
       "ft" : 2048,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/Users\/a374\/Documents\/GitHub\/Web-3-Homework-S23\/deploy\/thanku.html",
-      "oF" : 6
+      "oAP" : "\/deploy\/thanku.html",
+      "oF" : 2
     },
     "\/README.md" : {
       "cB" : 0,
