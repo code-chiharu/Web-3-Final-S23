@@ -42,6 +42,42 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/carcass.png" : {
+      "ft" : 32768,
+      "iS" : 25843,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/carcass.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/dovetail.png" : {
+      "ft" : 32768,
+      "iS" : 26990,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/dovetail.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/facebook.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/facebook.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/deploy\/img\/global\/logo.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -76,6 +112,19 @@
       "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/image 4.png" : {
+      "ft" : 32768,
+      "iS" : 1693063,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/image 4.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
       "rq" : 75
     },
     "\/deploy\/img\/partners\/android.svg" : {
