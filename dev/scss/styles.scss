@@ -19,7 +19,21 @@
 @import "layout/_footer";
 
 // Sections Styles
-@import "sections/_heroes";
-@import "sections/_about";
-@import "sections/_partners";
-@import "sections/_requests";
+// product page
+@import "sections/product/_hero";
+@import "sections/product/_productdetail";
+@import "sections/product/_productdisplay";
+@import "sections/product/_specialty";
+@import "sections/product/_tutorial";
+@import "sections/product/_accessories";
+@import "sections/product/_review";
+
+// checkout page
+@import "sections/thanku/_confirmation";
+@import "sections/thanku/_message";
+@import "sections/thanku/_ordersummary";
+
+// thanku page
+@import "sections/checkout/_payment";
+@import "sections/checkout/_progress";
+@import "sections/checkout/_summary";
