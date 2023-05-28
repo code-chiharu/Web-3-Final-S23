@@ -88,6 +88,19 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/deploy\/img\/hero.png" : {
+      "ft" : 32768,
+      "iS" : 1693063,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/hero.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/deploy\/img\/heroes\/hero-2.jpg" : {
       "ft" : 16384,
       "iS" : 1003073,
@@ -114,11 +127,21 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/image 4.png" : {
+    "\/deploy\/img\/instagram.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/instagram.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/logo.png" : {
       "ft" : 32768,
-      "iS" : 1693063,
+      "iS" : 9747,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/image 4.png",
+      "oAP" : "\/deploy\/img\/logo.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -182,6 +205,78 @@
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/deploy\/img\/partners\/reddit.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/sawcase.png" : {
+      "ft" : 32768,
+      "iS" : 50061,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/sawcase.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/tenon.png" : {
+      "ft" : 32768,
+      "iS" : 32250,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/tenon.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/tenonsawdetail.png" : {
+      "ft" : 32768,
+      "iS" : 1003121,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/tenonsawdetail.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/tutorialvideo.png" : {
+      "ft" : 32768,
+      "iS" : 889107,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/tutorialvideo.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/twitter-alt.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/twitter-alt.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/youtube.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/youtube.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
