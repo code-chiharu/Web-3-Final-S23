@@ -14,5 +14,16 @@
 
 
 .large-images{
-    width: 100%;
+    width: 100%
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+
+    li{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
 }

@@ -3,7 +3,7 @@
 ============= */
 header{
     background-color: var(--AlmondBrown);
-    // color: var(--mintlight);
+    color: var(--SoftOat);
 
     display: grid;
     grid-template-columns: 50% auto;
@@ -70,7 +70,7 @@ header{
         // display:flex;
 
         #header-img{
-            background-image: url("../img/global/logo2_transparent.png" );
+            background-image: url("../img/logo.png" );
             height: 70px;
             background-size: contain;
             background-position: center;

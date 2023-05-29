@@ -13,6 +13,11 @@ html {
 :root {
   --black: #000000;
   --white: #ffffff;
+  --LightNude: ##EBDBC9;
+  --AlmondBrown: #CCC2B1;
+  --CreamyBeige: #F3ECE2;
+  --CaramelLatte: #D2B99B;
+  --SoftOat: #FFF3ED;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -340,9 +345,28 @@ template {
   width: 100%;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+  padding: 0;
+}
+
 /* =============
     Buttons
 ============= */
@@ -367,50 +391,144 @@ textarea {
 /* =============
     Navigation
 ============= */
+a {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.show-menu {
+  display: block !important;
+}
+
+nav {
+  display: none;
+}
+@media (min-width: 768px) {
+  nav {
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+nav ul li {
+  text-align: right;
+}
+@media (min-width: 768px) {
+  nav ul li {
+    margin-left: 16px;
+  }
+}
+nav ul li a:link, nav ul li a:visited {
+  font-family: "roboto", sans-serif;
+  display: inline-block;
+  color: var(--white);
+  padding: 16px 0 16px;
+  font-weight: 500;
+}
+@media (min-width: 768px) {
+  nav ul li a:link, nav ul li a:visited {
+    padding: 24px 14px;
+    border: 1px solid var(--mintnormal);
+    color: var(--mintdark);
+    border-radius: 6px;
+    transition: 0.25s;
+  }
+}
+@media (min-width: 768px) {
+  nav ul li a:link:hover, nav ul li a:link:active, nav ul li a:visited:hover, nav ul li a:visited:active {
+    background-color: var(--SoftOat);
+    color: var(--white);
+  }
+}
+
 /* =============
     Header
 ============= */
+header {
+  background-color: var(--AlmondBrown);
+  color: var(--SoftOat);
+  display: grid;
+  grid-template-columns: 50% auto;
+  grid-template-areas: "logo burger" "nav nav";
+  padding: 16px;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.3);
+}
+@media (min-width: 768px) {
+  header {
+    grid-template-columns: 15% auto 50%;
+    grid-template-areas: "logo text nav";
+  }
+}
+@media (min-width: 1440px) {
+  header {
+    grid-template-columns: 10% auto 50%;
+  }
+}
+header #logo {
+  grid-area: logo;
+  display: flex;
+  align-items: center;
+}
+header #text {
+  grid-area: text;
+}
+header #burger-container {
+  grid-area: burger;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+@media (min-width: 768px) {
+  header #burger-container {
+    display: none;
+  }
+}
+header #burger-container button {
+  border: none;
+  background-color: transparent;
+  color: var(--white);
+  font-size: 1.25rem;
+}
+header nav {
+  grid-area: nav;
+}
+header #header-img {
+  background-image: url("../img/logo.png");
+  height: 70px;
+  background-size: contain;
+  background-position: center;
+  width: 150px;
+}
+header section h1 {
+  font-size: 0;
+}
+@media (min-width: 768px) {
+  header section h1 {
+    font-size: 1.5625rem;
+    font-weight: 400;
+  }
+}
+header section h2 {
+  font-size: 0;
+}
+@media (min-width: 768px) {
+  header section h2 {
+    font-size: 0.75rem;
+    font-weight: 400;
+  }
+}
+
 /* =============
     Footer
 ============= */
-/* =============
-    Heroes
-============= */
-/* ------ Hero 2 -----*/
-/* =============
-    About
-============= */
-#about {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". about .";
-}
-#about > div {
-  grid-area: about;
-}
-
-/* =============
-    Partners
-============= */
-#partners {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". partners .";
-}
-#partners > div {
-  grid-area: partners;
-  border: 1px solid red;
-}
-
-/* =============
-    Requests
-============= */
-#requests {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". request .";
-}
-#requests > div {
-  grid-area: request;
-  border: 1px solid purple;
-}
