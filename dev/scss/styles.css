@@ -13,6 +13,11 @@ html {
 :root {
   --black: #000000;
   --white: #ffffff;
+  --LightNude: ##EBDBC9;
+  --AlmondBrown: #CCC2B1;
+  --CreamyBeige: #F3ECE2;
+  --CaramelLatte: #D2B99B;
+  --SoftOat: #FFF3ED;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -370,6 +375,82 @@ textarea {
 /* =============
     Header
 ============= */
+header {
+  background-color: var(--AlmondBrown);
+  display: grid;
+  grid-template-columns: 50% auto;
+  grid-template-areas: "logo burger" "nav nav";
+  padding: 16px;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.3);
+}
+@media (min-width: 768px) {
+  header {
+    grid-template-columns: 15% auto 50%;
+    grid-template-areas: "logo text nav";
+  }
+}
+@media (min-width: 1440px) {
+  header {
+    grid-template-columns: 10% auto 50%;
+  }
+}
+header #logo {
+  grid-area: logo;
+  display: flex;
+  align-items: center;
+}
+header #text {
+  grid-area: text;
+}
+header #burger-container {
+  grid-area: burger;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+@media (min-width: 768px) {
+  header #burger-container {
+    display: none;
+  }
+}
+header #burger-container button {
+  border: none;
+  background-color: transparent;
+  color: var(--white);
+  font-size: 1.25rem;
+}
+header nav {
+  grid-area: nav;
+}
+header #header-img {
+  background-image: url("../img/global/logo2_transparent.png");
+  height: 70px;
+  background-size: contain;
+  background-position: center;
+  width: 150px;
+}
+header section h1 {
+  font-size: 0;
+}
+@media (min-width: 768px) {
+  header section h1 {
+    font-size: 1.5625rem;
+    font-weight: 400;
+  }
+}
+header section h2 {
+  font-size: 0;
+}
+@media (min-width: 768px) {
+  header section h2 {
+    font-size: 0.75rem;
+    font-weight: 400;
+  }
+}
+
 /* =============
     Footer
 ============= */

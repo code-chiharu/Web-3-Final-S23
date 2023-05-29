@@ -15,10 +15,20 @@ $screen-lg-min: 1024px;
 // Large desktops
 $screen-xl-min: 1200px;
 
+// Extra Large desktops
+$screen-xxl-min: 1440px;
+
+
+
 
 // Colors vars
 :root {
   --black: #000000;
   --white: #ffffff;
-}
+  --LightNude: ##EBDBC9;
+  --AlmondBrown: #CCC2B1;
+  --CreamyBeige: #F3ECE2;
+  --CaramelLatte: #D2B99B;
+  --SoftOat: #FFF3ED;
+  }
 

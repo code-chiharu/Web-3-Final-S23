@@ -2,4 +2,107 @@
     Header
 ============= */
 header{
-}
+    background-color: var(--AlmondBrown);
+    // color: var(--mintlight);
+
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: 
+    "logo burger"
+    "nav nav";
+    padding: 16px;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.3);
+
+    @include md{
+        grid-template-columns: 15% auto 50%;
+        grid-template-areas: "logo text nav";
+    }
+
+    @include xxl{
+        grid-template-columns: 10% auto 50%;
+    }
+
+    #logo{
+        grid-area: logo;
+        display: flex;
+        align-items: center;
+        // border: 1px solid red;
+
+    }
+
+    #text{
+        grid-area: text;
+    }
+
+    #burger-container{
+        // text-align: right;
+        grid-area: burger;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        // border: 1px solid red;
+
+        @include md{
+            display: none;
+        }
+
+        button{
+            border: none;
+            background-color: transparent;
+            color: var(--white);
+            font-size: rem-calc(20);
+        }
+    }
+
+    nav{
+        grid-area: nav;
+    }
+
+    // padding: 16px 0;
+    // @include xxl{
+    //     padding: 24px 0;
+    // }
+
+    // div{
+        // display:flex;
+
+        #header-img{
+            background-image: url("../img/global/logo2_transparent.png" );
+            height: 70px;
+            background-size: contain;
+            background-position: center;
+            width: 150px;
+        }
+
+        // img{
+        //     width: 150px;
+        // }
+
+        section{
+            // margin-left: auto;
+
+            h1{
+                font-size: rem-calc(0);
+
+            @include md{
+                font-size: rem-calc(25);
+                font-weight: 400;
+            }
+
+            }
+            h2{
+                font-size: rem-calc(0);
+
+            @include md{
+                font-size: rem-calc(12);
+                font-weight: 400;
+            }
+            }
+
+            }
+        }
+
+    // }
