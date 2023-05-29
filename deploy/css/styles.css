@@ -430,7 +430,7 @@ nav ul li a:link, nav ul li a:visited {
   font-family: "roboto", sans-serif;
   display: inline-block;
   color: var(--white);
-  padding: 16px 0 16px;
+  padding: 8px 0 8px;
   font-weight: 500;
 }
 @media (min-width: 768px) {
@@ -456,9 +456,8 @@ header {
   background-color: var(--AlmondBrown);
   color: var(--SoftOat);
   display: grid;
-  grid-template-columns: 50% auto;
+  grid-template-columns: 10% auto;
   grid-template-areas: "logo burger" "nav nav";
-  padding: 16px;
   position: fixed;
   width: 100%;
   box-sizing: border-box;
@@ -467,7 +466,6 @@ header {
 @media (min-width: 768px) {
   header {
     grid-template-columns: 15% auto 50%;
-    grid-template-areas: "logo text nav";
   }
 }
 @media (min-width: 1440px) {
@@ -479,9 +477,6 @@ header #logo {
   grid-area: logo;
   display: flex;
   align-items: center;
-}
-header #text {
-  grid-area: text;
 }
 header #burger-container {
   grid-area: burger;
@@ -532,3 +527,32 @@ header section h2 {
 /* =============
     Footer
 ============= */
+/* =============
+    Hero
+============= */
+#hero {
+  scroll-margin-top: 10000px;
+}
+#hero section #hero-img {
+  background-image: url("../img/hero.png");
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #hero section #hero-img {
+    height: 50vh;
+  }
+}
+@media (min-width: 1200px) {
+  #hero section #hero-img {
+    background-position: center 80%;
+    height: 65vh;
+  }
+}
+@media (min-width: 1440px) {
+  #hero section #hero-img {
+    height: 70vh;
+  }
+}

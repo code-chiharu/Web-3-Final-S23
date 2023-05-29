@@ -1,0 +1,30 @@
+/* =============
+    Hero
+============= */
+#hero{
+
+    scroll-margin-top: 10000px;
+
+    section{
+    #hero-img{
+        background-image: url("../img/hero.png");
+        background-size: cover;
+        background-position: center;
+        height: 40vh;
+        width: 100%;
+
+        @include md{
+            height: 50vh;
+        }
+
+        @include xl{
+            background-position: center 80%;
+            height: 65vh;
+        }
+
+        @include xxl{
+            height: 70vh;
+        }
+    }
+}
+}
