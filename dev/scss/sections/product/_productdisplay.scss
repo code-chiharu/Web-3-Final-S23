@@ -1,0 +1,28 @@
+/* ===================
+    Product Display
+==================== */
+#display{
+
+    scroll-margin-top: 90px;
+    margin-top: 24px;
+
+    div{
+            display: grid;
+            grid-template-columns: 12px auto 12px;
+            grid-template-areas: ". display .";
+            padding-bottom: 16px;
+
+        ul{
+            grid-area: display;
+
+            li{
+                
+                h3{
+                   text-align: right;
+                }
+            }
+
+
+        }
+    }
+}

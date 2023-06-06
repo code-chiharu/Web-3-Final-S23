@@ -586,3 +586,23 @@ footer {
     font-size: 1.5rem;
   }
 }
+
+/* ===================
+    Product Display
+==================== */
+#display {
+  scroll-margin-top: 90px;
+  margin-top: 24px;
+}
+#display div {
+  display: grid;
+  grid-template-columns: 12px auto 12px;
+  grid-template-areas: ". display .";
+  padding-bottom: 16px;
+}
+#display div ul {
+  grid-area: display;
+}
+#display div ul li h3 {
+  text-align: right;
+}
