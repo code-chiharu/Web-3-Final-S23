@@ -16,10 +16,19 @@
             grid-area: display;
 
             li{
-                
-                h3{
-                   text-align: right;
+                #d-img{
+                    background-color: var(--AlmondBrown);
+                    padding: 64px 0;
                 }
+
+                h3{
+                    padding-bottom: 4px;
+                    text-align: right;
+                }
+                h2{
+                    padding-bottom: 4px;
+                }
+                
             }
 
 

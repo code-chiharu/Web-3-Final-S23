@@ -603,6 +603,14 @@ footer {
 #display div ul {
   grid-area: display;
 }
+#display div ul li #d-img {
+  background-color: var(--AlmondBrown);
+  padding: 64px 0;
+}
 #display div ul li h3 {
+  padding-bottom: 4px;
   text-align: right;
+}
+#display div ul li h2 {
+  padding-bottom: 4px;
 }
