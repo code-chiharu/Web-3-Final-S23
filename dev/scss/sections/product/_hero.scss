@@ -2,29 +2,25 @@
     Hero
 ============= */
 #hero{
-
     scroll-margin-top: 10000px;
     padding-top: 75px;
+    
+    div{
 
     section{
-    #hero-img{
         background-image: url("../img/hero.png");
-        background-size: cover;
+        background-repeat: no-repeat;
         background-position: center;
-        height: 40vh;
+        background-size: cover;
+        height: 90vh;
         width: 100%;
 
         @include md{
-            height: 50vh;
+            height: 100vh;
         }
 
         @include xl{
             background-position: center 80%;
-            height: 65vh;
-        }
-
-        @include xxl{
-            height: 70vh;
         }
     }
 }

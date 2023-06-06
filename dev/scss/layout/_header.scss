@@ -18,6 +18,8 @@ header{
 
     @include md{
         grid-template-columns: 15% auto;
+        grid-template-areas: "logo text nav";
+        padding-top: 8px;
     }
 
     @include xxl{

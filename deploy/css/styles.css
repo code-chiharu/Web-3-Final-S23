@@ -416,6 +416,7 @@ html {
 }
 #main-menu ul li {
   text-align: right;
+  padding-right: 8px;
 }
 @media (min-width: 768px) {
   #main-menu ul li {
@@ -441,7 +442,7 @@ html {
 @media (min-width: 768px) {
   #main-menu ul li a:link:hover, #main-menu ul li a:link:active, #main-menu ul li a:visited:hover, #main-menu ul li a:visited:active {
     background-color: var(--SoftOat);
-    color: var(--white);
+    color: var(--AlmondBrown);
   }
 }
 
@@ -462,6 +463,8 @@ header {
 @media (min-width: 768px) {
   header {
     grid-template-columns: 15% auto;
+    grid-template-areas: "logo text nav";
+    padding-top: 8px;
   }
 }
 @media (min-width: 1440px) {
@@ -534,26 +537,21 @@ footer {
   scroll-margin-top: 10000px;
   padding-top: 75px;
 }
-#hero section #hero-img {
+#hero div section {
   background-image: url("../img/hero.png");
-  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
-  height: 40vh;
+  background-size: cover;
+  height: 90vh;
   width: 100%;
 }
 @media (min-width: 768px) {
-  #hero section #hero-img {
-    height: 50vh;
+  #hero div section {
+    height: 100vh;
   }
 }
 @media (min-width: 1200px) {
-  #hero section #hero-img {
+  #hero div section {
     background-position: center 80%;
-    height: 65vh;
-  }
-}
-@media (min-width: 1440px) {
-  #hero section #hero-img {
-    height: 70vh;
   }
 }
