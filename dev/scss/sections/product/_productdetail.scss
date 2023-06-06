@@ -2,6 +2,8 @@
     Product Display
 ==================== */
 #productdetail{
+
+    padding-top: 16px;
     div{
 
         #overview{
@@ -9,10 +11,20 @@
         }
         #detail-text{
             background-color: var(--AlmondBrown);
+            text-align: center;
+            padding: 8px 0 ;
 
             #detail-text-more{
                 display: flex;
-                position: center;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+
+                h3{
+                    
+                    font-size: rem-calc(12);
+                    font-weight: 400;
+                }
 
             }
 

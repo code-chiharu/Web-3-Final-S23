@@ -647,12 +647,23 @@ footer {
 /* ===================
     Product Display
 ==================== */
+#productdetail {
+  padding-top: 16px;
+}
 #productdetail div #detail-text {
   background-color: var(--AlmondBrown);
+  text-align: center;
+  padding: 8px 0;
 }
 #productdetail div #detail-text #detail-text-more {
   display: flex;
-  position: center;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+#productdetail div #detail-text #detail-text-more h3 {
+  font-size: 0.75rem;
+  font-weight: 400;
 }
 #productdetail div #detail-priceicon {
   display: flex;
