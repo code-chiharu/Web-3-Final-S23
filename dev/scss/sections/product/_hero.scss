@@ -22,6 +22,37 @@
         @include xl{
             background-position: center 80%;
         }
+
+        // display: grid;
+        // grid-template-columns: auto;
+        // grid-template-areas: 
+        // "."
+        // "."
+        // "."
+        // "hero-text";
+
+        #hero-text{
+
+            // grid-area: hero-text;
+            display: flex;
+
+            div{
+
+                align-self: flex-end;
+                margin: 8px;
+
+                h1{
+                    font-size: rem-calc(32);
+                    font-weight: 600;
+                }
+                h2{
+                    font-size: rem-calc(16);
+                    font-weight: 600;
+                }
+            }
+        
+        }
+    
     }
 }
 }

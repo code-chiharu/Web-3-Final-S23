@@ -41,6 +41,7 @@ header{
         display: flex;
         align-items: center;
         justify-content: flex-end;
+        padding-right: 4px;
         // border: 1px solid red;
 
         @include md{

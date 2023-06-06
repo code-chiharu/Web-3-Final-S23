@@ -482,6 +482,7 @@ header #burger-container {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  padding-right: 4px;
 }
 @media (min-width: 768px) {
   header #burger-container {
@@ -554,4 +555,19 @@ footer {
   #hero div section {
     background-position: center 80%;
   }
+}
+#hero div section #hero-text {
+  display: flex;
+}
+#hero div section #hero-text div {
+  align-self: flex-end;
+  margin: 8px;
+}
+#hero div section #hero-text div h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+#hero div section #hero-text div h2 {
+  font-size: 1rem;
+  font-weight: 600;
 }
