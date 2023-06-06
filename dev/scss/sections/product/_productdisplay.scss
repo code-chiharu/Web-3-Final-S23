@@ -6,19 +6,33 @@
     scroll-margin-top: 90px;
     margin-top: 24px;
 
+
     div{
             display: grid;
             grid-template-columns: 12px auto 12px;
             grid-template-areas: ". display .";
             padding-bottom: 16px;
 
+            @include md{
+                padding: 0 16px;
+            }
+
         ul{
             grid-area: display;
+
+            @include md{
+                display: grid;
+                grid-template-columns: "33% auto 33%";
+                grid-template-areas: "d1 d2 d3";
+                gap: 24px;
+        
+            }
 
             li{
                 #d-img{
                     background-color: var(--AlmondBrown);
                     padding: 64px 0;
+                    height: 250px;
                 }
 
                 h3{
@@ -27,6 +41,22 @@
                 }
                 h2{
                     padding-bottom: 4px;
+                }
+
+                #d1{
+                    @include md{
+                        grid-area: d1;
+                    }
+                }
+                #d2{
+                    @include md{
+                        grid-area: d2;
+                    }
+                }
+                #d3{
+                    @include md{
+                        grid-area: d3;
+                    }
                 }
                 
             }

@@ -600,12 +600,26 @@ footer {
   grid-template-areas: ". display .";
   padding-bottom: 16px;
 }
+@media (min-width: 768px) {
+  #display div {
+    padding: 0 16px;
+  }
+}
 #display div ul {
   grid-area: display;
+}
+@media (min-width: 768px) {
+  #display div ul {
+    display: grid;
+    grid-template-columns: "33% auto 33%";
+    grid-template-areas: "d1 d2 d3";
+    gap: 24px;
+  }
 }
 #display div ul li #d-img {
   background-color: var(--AlmondBrown);
   padding: 64px 0;
+  height: 250px;
 }
 #display div ul li h3 {
   padding-bottom: 4px;
@@ -613,4 +627,19 @@ footer {
 }
 #display div ul li h2 {
   padding-bottom: 4px;
+}
+@media (min-width: 768px) {
+  #display div ul li #d1 {
+    grid-area: d1;
+  }
+}
+@media (min-width: 768px) {
+  #display div ul li #d2 {
+    grid-area: d2;
+  }
+}
+@media (min-width: 768px) {
+  #display div ul li #d3 {
+    grid-area: d3;
+  }
 }
