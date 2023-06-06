@@ -17,11 +17,11 @@ header{
     box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.3);
 
     @include md{
-        grid-template-columns: 15% auto 50%;
+        grid-template-columns: 15% auto;
     }
 
     @include xxl{
-        grid-template-columns: 10% auto 50%;
+        grid-template-columns: 10% auto;
     }
 
     #logo{

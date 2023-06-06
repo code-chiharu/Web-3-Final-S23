@@ -332,13 +332,9 @@ template {
 /* =============
     Base
 ============= */
-.header-footer-grid {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". header-footer .";
-}
-.header-footer-grid > div {
-  grid-area: header-footer;
+html {
+  margin: 0;
+  padding: 0;
 }
 
 .large-images {
@@ -403,30 +399,30 @@ html {
   display: block !important;
 }
 
-nav {
+#main-menu {
   display: none;
 }
 @media (min-width: 768px) {
-  nav {
+  #main-menu {
     display: block;
   }
 }
 @media (min-width: 768px) {
-  nav ul {
+  #main-menu ul {
     display: flex;
     justify-content: flex-end;
     align-items: center;
   }
 }
-nav ul li {
+#main-menu ul li {
   text-align: right;
 }
 @media (min-width: 768px) {
-  nav ul li {
+  #main-menu ul li {
     margin-left: 16px;
   }
 }
-nav ul li a:link, nav ul li a:visited {
+#main-menu ul li a:link, #main-menu ul li a:visited {
   font-family: "roboto", sans-serif;
   display: inline-block;
   color: var(--white);
@@ -434,7 +430,7 @@ nav ul li a:link, nav ul li a:visited {
   font-weight: 500;
 }
 @media (min-width: 768px) {
-  nav ul li a:link, nav ul li a:visited {
+  #main-menu ul li a:link, #main-menu ul li a:visited {
     padding: 24px 14px;
     border: 1px solid var(--mintnormal);
     color: var(--mintdark);
@@ -443,7 +439,7 @@ nav ul li a:link, nav ul li a:visited {
   }
 }
 @media (min-width: 768px) {
-  nav ul li a:link:hover, nav ul li a:link:active, nav ul li a:visited:hover, nav ul li a:visited:active {
+  #main-menu ul li a:link:hover, #main-menu ul li a:link:active, #main-menu ul li a:visited:hover, #main-menu ul li a:visited:active {
     background-color: var(--SoftOat);
     color: var(--white);
   }
@@ -465,12 +461,12 @@ header {
 }
 @media (min-width: 768px) {
   header {
-    grid-template-columns: 15% auto 50%;
+    grid-template-columns: 15% auto;
   }
 }
 @media (min-width: 1440px) {
   header {
-    grid-template-columns: 10% auto 50%;
+    grid-template-columns: 10% auto;
   }
 }
 header #logo {
@@ -527,11 +523,16 @@ header section h2 {
 /* =============
     Footer
 ============= */
+footer {
+  background-color: var(--AlmondBrown);
+}
+
 /* =============
     Hero
 ============= */
 #hero {
   scroll-margin-top: 10000px;
+  padding-top: 75px;
 }
 #hero section #hero-img {
   background-image: url("../img/hero.png");
