@@ -1,0 +1,33 @@
+/* ===================
+    Product Display
+==================== */
+#productdetail{
+    div{
+
+        #overview{
+
+        }
+        #detail-text{
+            background-color: var(--AlmondBrown);
+
+            #detail-text-more{
+                display: flex;
+                position: center;
+
+            }
+
+        }
+        #detail-priceicon{
+            display: flex;
+
+            h2{
+                background-color: var(--AlmondBrown);
+            }
+            form{
+                button{
+                    background-color: var(--AlmondBrown);
+                }
+            }
+        }
+    }
+}

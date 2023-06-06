@@ -643,3 +643,23 @@ footer {
     grid-area: d3;
   }
 }
+
+/* ===================
+    Product Display
+==================== */
+#productdetail div #detail-text {
+  background-color: var(--AlmondBrown);
+}
+#productdetail div #detail-text #detail-text-more {
+  display: flex;
+  position: center;
+}
+#productdetail div #detail-priceicon {
+  display: flex;
+}
+#productdetail div #detail-priceicon h2 {
+  background-color: var(--AlmondBrown);
+}
+#productdetail div #detail-priceicon form button {
+  background-color: var(--AlmondBrown);
+}
