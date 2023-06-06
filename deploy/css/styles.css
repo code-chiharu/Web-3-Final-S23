@@ -562,12 +562,27 @@ footer {
 #hero div section #hero-text div {
   align-self: flex-end;
   margin: 8px;
+  padding-bottom: 8px;
 }
 #hero div section #hero-text div h1 {
   font-size: 2rem;
   font-weight: 600;
+  color: var(--white);
 }
 #hero div section #hero-text div h2 {
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 400;
+  color: var(--white);
+}
+@media (min-width: 768px) {
+  #hero div section #hero-text div {
+    margin: 24px;
+    padding-bottom: 16px;
+  }
+  #hero div section #hero-text div h1 {
+    font-size: 3rem;
+  }
+  #hero div section #hero-text div h2 {
+    font-size: 1.5rem;
+  }
 }

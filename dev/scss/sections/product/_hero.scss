@@ -40,15 +40,31 @@
 
                 align-self: flex-end;
                 margin: 8px;
+                padding-bottom: 8px;
 
                 h1{
                     font-size: rem-calc(32);
                     font-weight: 600;
+                    color: var(--white);
                 }
                 h2{
                     font-size: rem-calc(16);
-                    font-weight: 600;
+                    font-weight: 400;
+                    color: var(--white);
                 }
+
+                @include md{
+                    margin: 24px;
+                    padding-bottom: 16px;
+
+                    h1{
+                        font-size: rem-calc(48);
+                    }
+                    h2{
+                        font-size: rem-calc(24);
+                    }
+                }
+
             }
         
         }
