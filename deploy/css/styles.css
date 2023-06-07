@@ -650,27 +650,27 @@ footer {
 #productdetail {
   padding-top: 16px;
 }
-#productdetail div #detail-text {
+#productdetail div #overview #detail-text {
   background-color: var(--AlmondBrown);
   text-align: center;
   padding: 8px 0;
 }
-#productdetail div #detail-text #detail-text-more {
+#productdetail div #overview #detail-text #detail-text-more {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
 }
-#productdetail div #detail-text #detail-text-more h3 {
+#productdetail div #overview #detail-text #detail-text-more h3 {
   font-size: 0.75rem;
   font-weight: 400;
 }
-#productdetail div #detail-priceicon {
+#productdetail div #overview #detail-priceicon {
   display: flex;
 }
-#productdetail div #detail-priceicon h2 {
+#productdetail div #overview #detail-priceicon h2 {
   background-color: var(--AlmondBrown);
 }
-#productdetail div #detail-priceicon form button {
+#productdetail div #overview #detail-priceicon form button {
   background-color: var(--AlmondBrown);
 }
