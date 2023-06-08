@@ -4,7 +4,8 @@
 #display{
 
     scroll-margin-top: 90px;
-    margin-top: 24px;
+    margin-top: 48px;
+    margin-bottom: 48px;
 
 
     div{
@@ -24,7 +25,7 @@
                 display: grid;
                 grid-template-columns: "33% auto 33%";
                 grid-template-areas: "d1 d2 d3";
-                gap: 24px;
+                gap: 32px;
         
             }
 
@@ -32,7 +33,11 @@
                 #d-img{
                     background-color: var(--AlmondBrown);
                     padding: 64px 0;
-                    height: 250px;
+                    height: 200px;
+
+                    @include md{
+                        height: 275px;
+                    }
                 }
 
                 h3{
@@ -40,7 +45,10 @@
                     text-align: right;
                 }
                 h2{
-                    padding-bottom: 4px;
+                    text-align: right;
+                    margin-top: -24px;
+                    padding-bottom: 24px;
+                    background-color: var(--SoftOat);
                 }
 
                 #d1{

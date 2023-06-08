@@ -462,8 +462,8 @@ header {
 }
 @media (min-width: 768px) {
   header {
-    grid-template-columns: 15% auto;
-    grid-template-areas: "logo text nav";
+    grid-template-columns: 15% auto 55%;
+    grid-template-areas: "logo nav icon";
     padding-top: 8px;
   }
 }
@@ -474,8 +474,6 @@ header {
 }
 header #logo {
   grid-area: logo;
-  display: flex;
-  align-items: center;
 }
 header #burger-container {
   grid-area: burger;
@@ -486,6 +484,9 @@ header #burger-container {
 }
 @media (min-width: 768px) {
   header #burger-container {
+    grid-area: icon;
+  }
+  header #burger-container #burger-btn {
     display: none;
   }
 }
@@ -592,7 +593,8 @@ footer {
 ==================== */
 #display {
   scroll-margin-top: 90px;
-  margin-top: 24px;
+  margin-top: 48px;
+  margin-bottom: 48px;
 }
 #display div {
   display: grid;
@@ -613,20 +615,28 @@ footer {
     display: grid;
     grid-template-columns: "33% auto 33%";
     grid-template-areas: "d1 d2 d3";
-    gap: 24px;
+    gap: 32px;
   }
 }
 #display div ul li #d-img {
   background-color: var(--AlmondBrown);
   padding: 64px 0;
-  height: 250px;
+  height: 200px;
+}
+@media (min-width: 768px) {
+  #display div ul li #d-img {
+    height: 275px;
+  }
 }
 #display div ul li h3 {
   padding-bottom: 4px;
   text-align: right;
 }
 #display div ul li h2 {
-  padding-bottom: 4px;
+  text-align: right;
+  margin-top: -24px;
+  padding-bottom: 24px;
+  background-color: var(--SoftOat);
 }
 @media (min-width: 768px) {
   #display div ul li #d1 {
