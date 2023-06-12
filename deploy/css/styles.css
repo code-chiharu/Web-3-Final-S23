@@ -355,6 +355,11 @@ body {
   background-color: var(--SoftOat);
 }
 
+button {
+  border: none;
+  background-color: transparent;
+}
+
 /* =============
     Typography
 ============= */
@@ -640,6 +645,11 @@ footer {
 #display div ul li p {
   padding: 12px 0;
 }
+#display div ul li form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 #display div ul #d1 section {
   background-image: url("../img/tenon.png");
   background-color: var(--AlmondBrown);
@@ -751,14 +761,20 @@ footer {
   justify-content: center;
   gap: 8px;
 }
+#productdetail div #overview #detail-text #detail-text-more #detail-text-more-tapered {
+  opacity: 0.4;
+}
 #productdetail div #overview #detail-text #detail-text-more h3 {
   font-size: 0.75rem;
   font-weight: 400;
 }
 #productdetail div #overview #detail-priceicon {
+  padding-top: 12px;
   display: flex;
+  gap: 12px;
 }
 #productdetail div #overview #detail-priceicon h2 {
+  font-size: 1.25rem;
   background-color: var(--AlmondBrown);
 }
 #productdetail div #overview #detail-priceicon form button {
