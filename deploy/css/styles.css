@@ -851,34 +851,53 @@ footer {
   }
 }
 @media (min-width: 768px) {
-  #productdetail div #overview #detail-img #detail-meu ul {
-    padding-top: 64px;
+  #productdetail div #overview #detail-menu ul {
     display: grid;
-    grid-template-columns: auto 15%;
-    grid-template-areas: ". text";
+    grid-template-columns: 75% auto;
+    grid-template-areas: ". m1" ". m2" ". m3" ". m4" ". m5" ". m6";
+    margin-top: -900px;
   }
 }
-#productdetail div #overview #detail-img #detail-meu ul li {
+#productdetail div #overview #detail-menu ul li {
   padding-top: 12px;
 }
 @media (min-width: 768px) {
-  #productdetail div #overview #detail-img #detail-meu ul li {
+  #productdetail div #overview #detail-menu ul li {
     padding-top: 48px;
     grid-area: text;
   }
+  #productdetail div #overview #detail-menu ul li #m1 {
+    grid-area: m1;
+  }
+  #productdetail div #overview #detail-menu ul li #m2 {
+    grid-area: m2;
+  }
+  #productdetail div #overview #detail-menu ul li #m3 {
+    grid-area: m3;
+  }
+  #productdetail div #overview #detail-menu ul li #m4 {
+    grid-area: m4;
+  }
+  #productdetail div #overview #detail-menu ul li #m5 {
+    grid-area: m5;
+  }
+  #productdetail div #overview #detail-menu ul li #m6 {
+    grid-area: m6;
+  }
 }
-#productdetail div #overview #detail-img #detail-meu ul li h2 {
+#productdetail div #overview #detail-menu ul li h2 {
   font-size: 1.25rem;
   font-weight: 400;
   border-bottom: 1px solid white;
   width: 100px;
-  padding: 8px 0;
+  padding: 4px 0;
   color: white;
   padding-left: 4px;
 }
 @media (min-width: 768px) {
-  #productdetail div #overview #detail-img #detail-meu ul li h2 {
+  #productdetail div #overview #detail-menu ul li h2 {
     font-size: 1.5rem;
     width: 140px;
+    padding-left: 0px;
   }
 }
