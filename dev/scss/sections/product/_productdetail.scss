@@ -3,6 +3,10 @@
 ==================== */
 #productdetail{
 
+    @include md{
+        background-color: var(--AlmondBrown);
+    }
+
     padding-top: 16px;
     div{
 
@@ -14,39 +18,140 @@
             text-align: center;
             padding: 8px 0 ;
 
+            h1{
+                margin-bottom: 4px;
+
+                @include md{
+                    text-align: left;
+                    padding-left: 24px;
+                    font-size: rem-calc(48);
+                }
+
+            }
+
+            #detail-bordercontainer{
+                display: grid;
+                grid-template-columns: auto 200px auto;
+                grid-template-areas: ". border .";
+
+                @include md{
+                    grid-template-columns: 24px auto;
+                }
+
+                #detail-border{
+                    grid-area: border;
+                    border-bottom: 1px solid white;
+                    width: 200px;
+                    margin-bottom: 8px;
+
+                    @include md{
+                        width: 300px;
+                    }
+    
+                }
+            }
+
             #detail-text-more{
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 gap: 8px;
 
-                #detail-text-more-tapered{
-                    opacity: .4;
+                @include md{
+                    align-items: flex-start;
+                    justify-content: flex-start;
+
                 }
 
                 h3{        
                     font-size: rem-calc(12);
                     font-weight: 400;
+
+                @include md{
+                    padding-left: 24px;
+                    font-size: rem-calc(24);
+                }
                 }
 
-            }
+                form{
+                    #detail-text-more-tapered{
+                        opacity: .25;
+                        font-size: rem-calc(12);
 
+                        @include md{
+                            font-size: rem-calc(24);
+                        }
+                    }
+                }
+            }
         }
         #detail-priceicon{
-            padding-top: 12px;
+            padding: 12px 0;
             display: flex;
             gap: 12px;
 
             h2{
+                padding: 4px;
                 font-size: rem-calc(20);
                 background-color: var(--AlmondBrown);
             }
             form{
                 button{
+                    padding: 8px;
                     background-color: var(--AlmondBrown);
                 }
             }
         }
+        #detail-img{
+            background-image: url("../img/tenonsawdetail.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 40vh;
+            width: 100%;
+
+            @include md{
+                height: 100vh;
+                width: 85%;
+            }
+
+            #detail-meu{
+                ul{
+                    @include md{
+                        padding-top: 64px;
+                        display: grid;
+                        grid-template-columns: auto 15%;
+                        grid-template-areas: ". text";
+                        
+                    }
+                    li{
+                        padding-top: 12px;
+
+                        @include md{
+                            padding-top: 48px;
+                            grid-area: text;
+                        }
+
+                        h2{
+                            font-size: rem-calc(20);
+                            font-weight: 400;
+                            border-bottom: 1px solid white;
+                            width: 100px;
+                            padding: 8px 0;
+                            color: white;
+                            padding-left: 4px;
+
+                            @include md{
+                                font-size: rem-calc(24);
+                                width: 140px;
+                            }
+
+                        }
+                    }
+
+                }
+            }
+            }
+        }
     }
     }
-}

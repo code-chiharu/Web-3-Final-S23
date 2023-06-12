@@ -750,10 +750,46 @@ footer {
 #productdetail {
   padding-top: 16px;
 }
+@media (min-width: 768px) {
+  #productdetail {
+    background-color: var(--AlmondBrown);
+  }
+}
 #productdetail div #overview #detail-text {
   background-color: var(--AlmondBrown);
   text-align: center;
   padding: 8px 0;
+}
+#productdetail div #overview #detail-text h1 {
+  margin-bottom: 4px;
+}
+@media (min-width: 768px) {
+  #productdetail div #overview #detail-text h1 {
+    text-align: left;
+    padding-left: 24px;
+    font-size: 3rem;
+  }
+}
+#productdetail div #overview #detail-text #detail-bordercontainer {
+  display: grid;
+  grid-template-columns: auto 200px auto;
+  grid-template-areas: ". border .";
+}
+@media (min-width: 768px) {
+  #productdetail div #overview #detail-text #detail-bordercontainer {
+    grid-template-columns: 24px auto;
+  }
+}
+#productdetail div #overview #detail-text #detail-bordercontainer #detail-border {
+  grid-area: border;
+  border-bottom: 1px solid white;
+  width: 200px;
+  margin-bottom: 8px;
+}
+@media (min-width: 768px) {
+  #productdetail div #overview #detail-text #detail-bordercontainer #detail-border {
+    width: 300px;
+  }
 }
 #productdetail div #overview #detail-text #detail-text-more {
   display: flex;
@@ -761,22 +797,88 @@ footer {
   justify-content: center;
   gap: 8px;
 }
-#productdetail div #overview #detail-text #detail-text-more #detail-text-more-tapered {
-  opacity: 0.4;
+@media (min-width: 768px) {
+  #productdetail div #overview #detail-text #detail-text-more {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
 }
 #productdetail div #overview #detail-text #detail-text-more h3 {
   font-size: 0.75rem;
   font-weight: 400;
 }
+@media (min-width: 768px) {
+  #productdetail div #overview #detail-text #detail-text-more h3 {
+    padding-left: 24px;
+    font-size: 1.5rem;
+  }
+}
+#productdetail div #overview #detail-text #detail-text-more form #detail-text-more-tapered {
+  opacity: 0.25;
+  font-size: 0.75rem;
+}
+@media (min-width: 768px) {
+  #productdetail div #overview #detail-text #detail-text-more form #detail-text-more-tapered {
+    font-size: 1.5rem;
+  }
+}
 #productdetail div #overview #detail-priceicon {
-  padding-top: 12px;
+  padding: 12px 0;
   display: flex;
   gap: 12px;
 }
 #productdetail div #overview #detail-priceicon h2 {
+  padding: 4px;
   font-size: 1.25rem;
   background-color: var(--AlmondBrown);
 }
 #productdetail div #overview #detail-priceicon form button {
+  padding: 8px;
   background-color: var(--AlmondBrown);
+}
+#productdetail div #overview #detail-img {
+  background-image: url("../img/tenonsawdetail.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 40vh;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #productdetail div #overview #detail-img {
+    height: 100vh;
+    width: 85%;
+  }
+}
+@media (min-width: 768px) {
+  #productdetail div #overview #detail-img #detail-meu ul {
+    padding-top: 64px;
+    display: grid;
+    grid-template-columns: auto 15%;
+    grid-template-areas: ". text";
+  }
+}
+#productdetail div #overview #detail-img #detail-meu ul li {
+  padding-top: 12px;
+}
+@media (min-width: 768px) {
+  #productdetail div #overview #detail-img #detail-meu ul li {
+    padding-top: 48px;
+    grid-area: text;
+  }
+}
+#productdetail div #overview #detail-img #detail-meu ul li h2 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  border-bottom: 1px solid white;
+  width: 100px;
+  padding: 8px 0;
+  color: white;
+  padding-left: 4px;
+}
+@media (min-width: 768px) {
+  #productdetail div #overview #detail-img #detail-meu ul li h2 {
+    font-size: 1.5rem;
+    width: 140px;
+  }
 }
