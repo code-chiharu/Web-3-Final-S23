@@ -351,6 +351,10 @@ ul li {
   list-style: none;
 }
 
+body {
+  background-color: var(--SoftOat);
+}
+
 /* =============
     Typography
 ============= */
@@ -450,6 +454,7 @@ html {
     Header
 ============= */
 header {
+  z-index: 10000;
   background-color: var(--AlmondBrown);
   color: var(--SoftOat);
   display: grid;
@@ -629,27 +634,102 @@ footer {
   }
 }
 #display div ul li h3 {
-  padding-bottom: 4px;
+  padding: 4px;
   text-align: right;
 }
-#display div ul li h2 {
-  text-align: right;
-  margin-top: -24px;
-  padding-bottom: 24px;
+#display div ul li p {
+  padding: 12px 0;
+}
+#display div ul #d1 section {
+  background-image: url("../img/tenon.png");
+  background-color: var(--AlmondBrown);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+  position: relative;
+}
+#display div ul #d1 section div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
   background-color: var(--SoftOat);
+  display: inline-block;
+}
+#display div ul #d1 section div h2 {
+  text-align: right;
+  margin: 12px 0;
+}
+@media (min-width: 320px) {
+  #display div ul #d1 section div h2 {
+    padding-left: 12px;
+    margin-bottom: 10px;
+  }
 }
 @media (min-width: 768px) {
-  #display div ul li #d1 {
+  #display div ul #d1 {
     grid-area: d1;
   }
 }
-@media (min-width: 768px) {
-  #display div ul li #d2 {
-    grid-area: d2;
+#display div ul #d2 section {
+  background-image: url("../img/dovetail.png");
+  background-color: var(--AlmondBrown);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+  position: relative;
+}
+#display div ul #d2 section div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: var(--SoftOat);
+  display: inline-block;
+}
+#display div ul #d2 section div h2 {
+  text-align: right;
+  margin: 12px 0;
+}
+@media (min-width: 320px) {
+  #display div ul #d2 section div h2 {
+    padding-left: 12px;
+    margin-bottom: 2px;
   }
 }
 @media (min-width: 768px) {
-  #display div ul li #d3 {
+  #display div ul #d2 {
+    grid-area: d2;
+  }
+}
+#display div ul #d3 section {
+  background-image: url("../img/carcass.png");
+  background-color: var(--AlmondBrown);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+  position: relative;
+}
+#display div ul #d3 section div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: var(--SoftOat);
+  display: inline-block;
+}
+#display div ul #d3 section div h2 {
+  text-align: right;
+  margin: 12px 0;
+}
+@media (min-width: 320px) {
+  #display div ul #d3 section div h2 {
+    padding-left: 12px;
+    margin-bottom: 2px;
+  }
+}
+@media (min-width: 768px) {
+  #display div ul #d3 {
     grid-area: d3;
   }
 }

@@ -41,27 +41,115 @@
                 }
 
                 h3{
-                    padding-bottom: 4px;
+                    padding: 4px;
                     text-align: right;
-                }
-                h2{
-                    text-align: right;
-                    margin-top: -24px;
-                    padding-bottom: 24px;
-                    background-color: var(--SoftOat);
                 }
 
+                p{
+                    padding: 12px 0;
+                }
+            }
+            
+
                 #d1{
+
+                    section{
+                        background-image: url("../img/tenon.png");
+                        background-color: var(--AlmondBrown);
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        height: 400px;
+                        position: relative;
+                        div{
+                            // margin-top: -100px;
+                            position: absolute;
+                            bottom: 0;
+                            right: 0;
+                            background-color: var(--SoftOat);
+                            display: inline-block;
+        
+                            h2{
+                                text-align: right;
+                                margin: 12px 0;
+
+                                @include sm{
+                                    padding-left: 12px;
+                                    margin-bottom: 10px;
+                                }
+                            }
+                        }
+                    }
                     @include md{
                         grid-area: d1;
                     }
                 }
+                
                 #d2{
+
+                    section{
+                        background-image: url("../img/dovetail.png");
+                        background-color: var(--AlmondBrown);
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            height: 400px;
+                            position: relative;
+                            div{
+                                // margin-top: -100px;
+                                position: absolute;
+                                bottom: 0;
+                                right: 0;
+                                background-color: var(--SoftOat);
+                                display: inline-block;
+            
+                                h2{
+                                    text-align: right;
+                                    margin: 12px 0;
+
+                                    @include sm{
+                                        padding-left: 12px;
+                                        margin-bottom: 2px;
+                                    }
+                                }
+                            }
+                    }
+
                     @include md{
                         grid-area: d2;
                     }
                 }
+
                 #d3{
+
+                    section{
+                        background-image: url("../img/carcass.png");
+                        background-color: var(--AlmondBrown);
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            height: 400px;
+                            position: relative;
+                            div{
+                                // margin-top: -100px;
+                                position: absolute;
+                                bottom: 0;
+                                right: 0;
+                                background-color: var(--SoftOat);
+                                display: inline-block;
+            
+                                h2{
+                                    text-align: right;
+                                    margin: 12px 0;
+
+                                    @include sm{
+                                        padding-left: 12px;
+                                        margin-bottom: 2px;
+                                    }
+                                }
+                            }
+                    }
+
                     @include md{
                         grid-area: d3;
                     }
@@ -71,5 +159,5 @@
 
 
         }
-    }
+    // }
 }
