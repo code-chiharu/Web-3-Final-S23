@@ -1,0 +1,41 @@
+/* ===================
+    Accessories
+==================== */
+#accessories{
+    div{
+        background-color: var(--AlmondBrown);
+
+        h1{
+            text-align: center;
+            background-color: var(--AlmondBrown);
+            margin-top: 24px;
+
+            @include md{
+                padding-top: 24px;
+            }
+        }
+        #acc-priceicon{
+            ul{
+                display: flex;
+                gap: 12px;
+                padding-left: 12px;
+                
+                li{
+                    background-color: var(--SoftOat);
+                    padding: 4px;
+
+                    h3{
+                        font-size: rem-calc(20);
+                    }
+                  
+                }
+            }
+        }
+
+        h2{
+            padding-left: 12px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+    }
+}

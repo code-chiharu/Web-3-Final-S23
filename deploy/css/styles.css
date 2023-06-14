@@ -538,8 +538,38 @@ header section h2 {
 /* =============
     Footer
 ============= */
-footer {
+footer div {
   background-color: var(--AlmondBrown);
+  margin-top: 24px;
+}
+footer div #footer-logo {
+  padding-top: 12px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+footer div nav ul {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+footer div ul {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 12px;
+}
+footer div h2 {
+  font-size: 0.75rem;
+  font-weight: 200;
+  text-align: center;
+}
+footer div h3 {
+  font-size: 0.75rem;
+  font-weight: 200;
+  text-align: center;
+  padding-bottom: 24px;
 }
 
 /* =============
@@ -869,7 +899,7 @@ footer {
 }
 @media (min-width: 768px) {
   #productdetail div #overview #detail-menu ul {
-    margin-top: -900px;
+    margin-top: -700px;
   }
 }
 #productdetail div #overview #detail-menu ul li {
@@ -877,7 +907,7 @@ footer {
 }
 @media (min-width: 768px) {
   #productdetail div #overview #detail-menu ul li {
-    padding-top: 84px;
+    padding-top: 68px;
   }
 }
 #productdetail div #overview #detail-menu ul li h2 {
@@ -902,7 +932,7 @@ footer {
 }
 @media (min-width: 768px) {
   #productdetail div #overview #detail-overview {
-    margin-top: 200px;
+    margin-top: 100px;
   }
 }
 #productdetail div #overview #detail-overview h1 {
@@ -1060,4 +1090,128 @@ footer {
   #specialty div #specialty-text ul li p {
     text-align: right;
   }
+}
+
+/* ==============
+   Tutorial
+================= */
+#tutorial div {
+  background-color: var(--AlmondBrown);
+}
+#tutorial div section {
+  padding: 12px;
+}
+#tutorial div h1 {
+  text-align: center;
+  padding-bottom: 12px;
+}
+@media (min-width: 768px) {
+  #tutorial div {
+    margin-top: 100px;
+  }
+}
+
+/* ===================
+    Accessories
+==================== */
+#accessories div {
+  background-color: var(--AlmondBrown);
+}
+#accessories div h1 {
+  text-align: center;
+  background-color: var(--AlmondBrown);
+  margin-top: 24px;
+}
+@media (min-width: 768px) {
+  #accessories div h1 {
+    padding-top: 24px;
+  }
+}
+#accessories div #acc-priceicon ul {
+  display: flex;
+  gap: 12px;
+  padding-left: 12px;
+}
+#accessories div #acc-priceicon ul li {
+  background-color: var(--SoftOat);
+  padding: 4px;
+}
+#accessories div #acc-priceicon ul li h3 {
+  font-size: 1.25rem;
+}
+#accessories div h2 {
+  padding-left: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+/* =========
+    Review
+============ */
+#review div {
+  margin-top: 48px;
+}
+#review div #review-title {
+  display: flex;
+  justify-content: center;
+}
+#review div #review-title h1 {
+  padding: 12px;
+  text-align: center;
+  background-color: var(--AlmondBrown);
+  margin-bottom: 12px;
+}
+#review div #review-p {
+  padding-top: 12px;
+  border-top: 1px solid black;
+}
+#review div #review-p h3 {
+  margin-left: 12px;
+  padding: 2px;
+  display: inline;
+  border: 1px solid black;
+}
+#review div #review-p img {
+  margin-top: 12px;
+  margin-left: 12px;
+}
+#review div #review-c {
+  padding-top: 12px;
+  border-top: 1px solid black;
+}
+#review div #review-c h3 {
+  margin-left: 12px;
+  padding: 2px;
+  display: inline;
+  border: 1px solid black;
+}
+#review div #review-c img {
+  margin-top: 12px;
+  margin-left: 12px;
+}
+#review div #review-detail {
+  display: flex;
+}
+#review div #review-detail h4 {
+  margin-left: 12px;
+  padding: 2px;
+  display: inline;
+  border: 1px solid black;
+}
+#review div #review-spec #review-customer {
+  padding-left: 12px;
+  margin-top: 12px;
+  display: flex;
+}
+#review div #review-spec #review-customer form button {
+  background-color: var(--AlmondBrown);
+  padding: 8px;
+}
+#review div #review-spec #review-customer h2 {
+  font-size: rem-clac(12);
+  padding-left: 12px;
+  font-weight: 200;
+}
+#review div #review-spec p {
+  margin: 0 12px;
 }

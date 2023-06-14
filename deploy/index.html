@@ -285,67 +285,77 @@
                 </section>
     <section id="tutorial">
                         <div>
+                            <section>
                             <img src="img/tutorialvideo.png" class="large-images">
-                            <form action="#">
+                            </section>
+                            <!-- <form action="#">
                                 <button><i class="fa-thin fa-play"></i></button>
-                            </form>
+                            </form> -->
                             <h1>TUTORIAL</h1>
-                            <p>(see more here)</p>
                         </div>
                     </section>
     <section id="accessories">
                             <div>
                                 <section>
-                                    <h1>Accessory</h1>
-                                    <h2>ACCESSORY</h2>
+                                    <h1>ACCESSORY</h1>
                                 </section>
                                 <section>
-                                    <form action="#">
+                                    <!-- <form action="#">
                                         <button><i class="fa-thin fa-chevrons-left"></i></button>
-                                    </form>
+                                    </form> -->
                                     <img src="img/sawcase.png" class="large-images">
-                                    <form action="#">
+                                    <!-- <form action="#">
                                         <button><i class="fa-thin fa-chevrons-right"></i></button>
-                                    </form>
+                                    </form> -->
                                 </section>
-                                <section>
-                                    <h2>$90</h2>
-                                    <form action="#">
-                                        <button><i class="fa-regular fa-basket-shopping-simple"></i></button>
-                                    </form>
-                                    <form action="#">
-                                        <button><i class="fa-light fa-heart"></i></button>
-                                    </form>
-                                    <h2>16-inch Tenon Saw Case</h2>
+                                <section id="acc-priceicon">
+                                    <ul>
+                                        <li>
+                                            <h3>$90</h3>
+                                        </li>
+                                        <li>
+                                            <form action="#">
+                                                <button><i class="fa-solid fa-cart-shopping"></i></button>
+                                            </form>
+                                        </li>
+                                        <li>
+                                            <form action="#">
+                                                <button><i class="fa-solid fa-heart"></i></button>
+                                            </form>
+                                        </li>
+                                    </ul>
                                 </section>
+                                <h2>16-inch Tenon Saw Case</h2>
                             </div>
                         </section>
     <section id="review">
                                 <div>
-                                    <section>
-                                        <h1>Reviews</h1>
-                                        <h2>REVIEWS</h2>
+                                    <section id="review-title">
+                                        <h1>REVIEWS</h1>
                                         <form action="#">
-                                            <button><i class="fa-light fa-pen-to-square"></i></button>
+                                            <button><i class="fa-solid fa-pen-to-square"></i></i></button>
                                         </form>
                                     </section>
-                                    <section>
+                                    <section id="review-p">
                                         <h3>Professional Reviews</h3>
                                         <img src="img/4filleddots.svg" alt="">
                                         <form action="#">
                                             <button><i class="fa-thin fa-chevrons-down"></i></button>
                                         </form>
                                     </section>
-                                    <section>
+                                    <section id="review-c">
                                         <h3>Consumer Reviews</h3>
                                         <img src="img/3filleddots.svg" alt="">
                                         <form action="#">
                                             <button><i class="fa-thin fa-chevrons-up"></i></button>
                                         </form>
                                     </section>
-                                    <section>
+                                    <section id="review-detail">
                                         <h4>SORT BY</h4>
-                                        <ul>
+                                        <form action="#">
+                                            <button><i class="fa-solid fa-chevron-down"></i></button>
+                                        </form>
+                                        <!-- <ul>
                                             <li>
                                                 <h5>best to worst</h5>
                                                 <form action="#">
@@ -358,14 +368,24 @@
                                                     <button><i class="fa-thin fa-chevrons-down"></i></button>
                                                 </form>
                                             </li>
-                                        </ul>
+                                        </ul> -->
+                                    </section>
+                                    <section id="review-spec">
+                                        <section id="review-customer">
+                                            <form action="#">
+                                                <button><i class="fa-regular fa-user"></i></button>
+                                            </form>
+                                                <h2>Very Useful!</h2>
+                                        </section>
+                                        <p>Overall, I would highly recommend the tenon saw to anyone who is looking for a reliable and efficient tool for their furniture-making projects. Its quality construction, precise cutting ability, and comfortable handle make it a must-have for any serious craftsman.
+                                            So, if you are in need of a high-quality saw for your woodworking projects, the tenon saw is definitely worth considering. With its durability and precision, you can be sure that it will help you achieve professional results every time.</p>
                                     </section>
                                 </div>
                             </section>
 
     <footer class="header-footer-grid">
         <div>
-            <img src="img/logo.png">
+            <img src="img/logo.png" id="footer-logo">
     
             <nav>
                 <ul>
@@ -376,16 +396,10 @@
                         <a href="#">About</a>
                     </li>
                     <li>
-                        <a href="#">Products</a>
-                    </li>
-                    <li>
                         <a href="#">Contact</a>
                     </li>
                     <li>
                         <a href="#">Policy</a>
-                    </li>
-                    <li>
-                        <a href="#">Others</a>
                     </li>
                 </ul>
             </nav>

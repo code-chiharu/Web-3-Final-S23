@@ -1,0 +1,26 @@
+/* ==============
+   Tutorial
+================= */
+#tutorial{
+    div{
+        background-color: var(--AlmondBrown);
+        // background-image: url("../img/tutorialvideo.png");
+        // background-repeat: no-repeat;
+        // background-position: center;
+        // height: 30vh;
+        // width: 100%;
+        // background-size: cover;
+        section{
+            padding:12px;
+        }
+        h1{
+            text-align: center;
+            padding-bottom: 12px;
+        }
+
+        @include md{
+            margin-top: 100px;
+        }
+
+    }
+}
