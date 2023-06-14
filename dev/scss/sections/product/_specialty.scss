@@ -13,6 +13,8 @@
         }
 
         #specialty-bgimg{
+            z-index: -100;
+            position: relative;
             background-image: url("../img/tenon.png");
             background-repeat: no-repeat;
             background-position: center;
@@ -26,27 +28,33 @@
         #specialty-button{
             ul{
                 display: grid;
-                grid-template-columns: 6, 1fr;
+                grid-template-columns: repeat(8, 1fr);
                 grid-template-areas: 
-                ". . b1 . . ."
-                ". . . . b2 ."
-                ". . . b3 . . ";
+                ". . b1 . . . . ."
+                ". . . . b2 . . ."
+                ". . . b3 . . . .";
+
+                margin-top: -300px;
+
+                #b1{
+                    grid-area: b1;
+                }
+                #b2{
+                    grid-area: b2;
+                }
+                #b3{
+                    grid-area: b3;
+                }
 
                 li{
+                    margin: 32px 0;
                     form{
                         button{
+                            padding: 12px;
                             background-color: var(--AlmondBrown);
                         }
                     }
-                    #b1{
-                        grid-area: b1;
-                    }
-                    #b2{
-                        grid-area: b2;
-                    }
-                    #b3{
-                        grid-area: b3;
-                    }
+                    
                 }
             }
         }

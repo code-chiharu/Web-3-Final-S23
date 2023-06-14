@@ -986,6 +986,8 @@ footer {
   background-color: var(--AlmondBrown);
 }
 #specialty div #specialty-bgimg {
+  z-index: -100;
+  position: relative;
   background-image: url("../img/tenon.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -995,18 +997,23 @@ footer {
 }
 #specialty div #specialty-button ul {
   display: grid;
-  grid-template-columns: 6, 1fr;
-  grid-template-areas: ". . b1 . . ." ". . . . b2 ." ". . . b3 . . ";
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas: ". . b1 . . . . ." ". . . . b2 . . ." ". . . b3 . . . .";
+  margin-top: -300px;
 }
-#specialty div #specialty-button ul li form button {
-  background-color: var(--AlmondBrown);
-}
-#specialty div #specialty-button ul li #b1 {
+#specialty div #specialty-button ul #b1 {
   grid-area: b1;
 }
-#specialty div #specialty-button ul li #b2 {
+#specialty div #specialty-button ul #b2 {
   grid-area: b2;
 }
-#specialty div #specialty-button ul li #b3 {
+#specialty div #specialty-button ul #b3 {
   grid-area: b3;
+}
+#specialty div #specialty-button ul li {
+  margin: 32px 0;
+}
+#specialty div #specialty-button ul li form button {
+  padding: 12px;
+  background-color: var(--AlmondBrown);
 }
