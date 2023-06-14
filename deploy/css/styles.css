@@ -862,7 +862,6 @@ footer {
 @media (min-width: 768px) {
   #productdetail div #overview #detail-img {
     height: 100vh;
-    width: 85%;
   }
 }
 #productdetail div #overview #detail-menu ul {
@@ -870,9 +869,6 @@ footer {
 }
 @media (min-width: 768px) {
   #productdetail div #overview #detail-menu ul {
-    display: grid;
-    grid-template-columns: 75% auto;
-    grid-template-areas: ". m1" ". m2" ". m3" ". m4" ". m5" ". m6";
     margin-top: -900px;
   }
 }
@@ -881,25 +877,7 @@ footer {
 }
 @media (min-width: 768px) {
   #productdetail div #overview #detail-menu ul li {
-    padding-top: 48px;
-  }
-  #productdetail div #overview #detail-menu ul li #m1 {
-    grid-area: m1;
-  }
-  #productdetail div #overview #detail-menu ul li #m2 {
-    grid-area: m2;
-  }
-  #productdetail div #overview #detail-menu ul li #m3 {
-    grid-area: m3;
-  }
-  #productdetail div #overview #detail-menu ul li #m4 {
-    grid-area: m4;
-  }
-  #productdetail div #overview #detail-menu ul li #m5 {
-    grid-area: m5;
-  }
-  #productdetail div #overview #detail-menu ul li #m6 {
-    grid-area: m6;
+    padding-top: 84px;
   }
 }
 #productdetail div #overview #detail-menu ul li h2 {
@@ -921,6 +899,11 @@ footer {
 #productdetail div #overview #detail-overview {
   margin-top: 75px;
   background-color: var(--AlmondBrown);
+}
+@media (min-width: 768px) {
+  #productdetail div #overview #detail-overview {
+    margin-top: 200px;
+  }
 }
 #productdetail div #overview #detail-overview h1 {
   text-align: center;
@@ -949,7 +932,7 @@ footer {
   margin-right: 12px;
 }
 #productdetail div #detail #detail-detail {
-  margin-top: 24px;
+  margin-top: 48px;
 }
 #productdetail div #detail #detail-detail h1 {
   text-align: center;
@@ -959,6 +942,7 @@ footer {
   text-align: right;
   margin: 12px 0;
   border-bottom: 1px solid black;
+  font-weight: 200;
 }
 #productdetail div #detail #detail-detail #detail-indetail {
   background-color: var(--AlmondBrown);
@@ -983,5 +967,14 @@ footer {
 }
 #productdetail div #detail #detail-detail #detail-indetail #detail-indetail-info {
   margin: 12px;
+  padding: 12px;
   background-color: var(--SoftOat);
 }
+#productdetail div #detail #detail-detail #detail-indetail #detail-indetail-info ul li {
+  padding: 4px;
+  display: flex;
+}
+
+/* ==============
+   Specialty
+================= */

@@ -124,7 +124,7 @@
 
             @include md{
                 height: 100vh;
-                width: 85%;
+                // width: 85%;
             }
         }
 
@@ -134,15 +134,15 @@
             margin-top: -325px;
 
             @include md{
-                display: grid;
-                grid-template-columns: 75% auto;
-                grid-template-areas: 
-                ". m1"
-                ". m2"
-                ". m3"
-                ". m4"
-                ". m5"
-                ". m6";
+                // display: grid;
+                // grid-template-columns: 75% auto;
+                // grid-template-areas: 
+                // ". m1"
+                // ". m2"
+                // ". m3"
+                // ". m4"
+                // ". m5"
+                // ". m6";
                 margin-top: -900px;
             }
             
@@ -150,26 +150,26 @@
                 padding-top: 12px;
 
                 @include md{
-                    padding-top: 48px;
+                    padding-top: 84px;
 
-                    #m1{
-                        grid-area: m1;
-                    }
-                    #m2{
-                        grid-area: m2;
-                    }
-                    #m3{
-                        grid-area: m3;
-                    }
-                    #m4{
-                        grid-area: m4;
-                    }
-                    #m5{
-                        grid-area: m5;
-                    }
-                    #m6{
-                        grid-area: m6;
-                    }
+                    // #m1{
+                    //     grid-area: m1;
+                    // }
+                    // #m2{
+                    //     grid-area: m2;
+                    // }
+                    // #m3{
+                    //     grid-area: m3;
+                    // }
+                    // #m4{
+                    //     grid-area: m4;
+                    // }
+                    // #m5{
+                    //     grid-area: m5;
+                    // }
+                    // #m6{
+                    //     grid-area: m6;
+                    // }
                 }
 
                 h2{
@@ -196,6 +196,10 @@
         #detail-overview{
             margin-top: 75px;
             background-color: var(--AlmondBrown);
+
+            @include md{
+                margin-top: 200px;
+            }
 
 
             h1{
@@ -235,7 +239,7 @@
         #detail{
 
             #detail-detail{
-                margin-top: 24px;
+                margin-top: 48px;
 
                 h1{
                     text-align: center;
@@ -245,6 +249,7 @@
                     text-align: right;
                     margin: 12px 0;
                     border-bottom: 1px solid black;
+                    font-weight: 200;
 
                 }
                 #detail-indetail{
@@ -270,7 +275,15 @@
 
                     #detail-indetail-info{
                         margin: 12px;
+                        padding: 12px;
                         background-color: var(--SoftOat);
+                        ul{
+                            li{
+                                padding: 4px;
+                                display: flex;
+
+                            }
+                        }
                     }
                 }
             }
