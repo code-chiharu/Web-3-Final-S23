@@ -1,0 +1,48 @@
+/* =============
+    Message
+============= */
+#message{
+
+    div{
+        display: grid;
+        grid-template-columns: 12px auto 12px;
+        grid-template-areas: ". content .";
+        background-color: var(--AlmondBrown);
+        margin: 12px;
+
+        @include md{
+            margin: 48px;
+        }
+
+        section{
+            padding: 12px;
+            grid-area: content;
+
+            h3{
+                font-size: rem-calc(16);
+                font-weight: 200;
+                text-align: center;
+                margin-top: 8px;
+                padding: 4px;
+
+                @include md{
+                    font-size: rem-calc(32);
+                    padding: 8px;
+                }
+            }
+
+            h2{
+                font-size: rem-calc(16);
+                text-align: center;
+                margin-bottom: 8px;
+
+                @include md{
+                    font-size: rem-calc(32);
+                    padding: 8px;
+
+                }
+            }
+        }
+
+    }
+}

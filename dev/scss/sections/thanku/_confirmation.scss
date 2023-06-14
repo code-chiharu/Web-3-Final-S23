@@ -1,0 +1,21 @@
+/* =============
+    Confirmation
+============= */
+#confirmation{
+
+    scroll-margin-top: 10000px;
+    padding-top: 80px;
+
+    div{
+        h1{
+            margin: 24px 12px;
+            text-align: center;
+            font-size: rem-calc(20);
+
+            @include md{
+                font-size: rem-calc(48);
+                padding-top: 12px;
+            }
+        }
+    }
+}

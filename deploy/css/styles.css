@@ -1222,6 +1222,179 @@ footer div h3 {
 }
 
 /* =============
+    Confirmation
+============= */
+#confirmation {
+  scroll-margin-top: 10000px;
+  padding-top: 80px;
+}
+#confirmation div h1 {
+  margin: 24px 12px;
+  text-align: center;
+  font-size: 1.25rem;
+}
+@media (min-width: 768px) {
+  #confirmation div h1 {
+    font-size: 3rem;
+    padding-top: 12px;
+  }
+}
+
+/* =============
+    Message
+============= */
+#message div {
+  display: grid;
+  grid-template-columns: 12px auto 12px;
+  grid-template-areas: ". content .";
+  background-color: var(--AlmondBrown);
+  margin: 12px;
+}
+@media (min-width: 768px) {
+  #message div {
+    margin: 48px;
+  }
+}
+#message div section {
+  padding: 12px;
+  grid-area: content;
+}
+#message div section h3 {
+  font-size: 1rem;
+  font-weight: 200;
+  text-align: center;
+  margin-top: 8px;
+  padding: 4px;
+}
+@media (min-width: 768px) {
+  #message div section h3 {
+    font-size: 2rem;
+    padding: 8px;
+  }
+}
+#message div section h2 {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 8px;
+}
+@media (min-width: 768px) {
+  #message div section h2 {
+    font-size: 2rem;
+    padding: 8px;
+  }
+}
+
+/* =============
+    Order Summary
+============= */
+#ordersummary div {
+  background-color: var(--AlmondBrown);
+  margin: 12px;
+}
+@media (min-width: 768px) {
+  #ordersummary div {
+    margin: 48px;
+  }
+}
+#ordersummary div #ordersummary-content {
+  padding-bottom: 12px;
+}
+#ordersummary div #ordersummary-content #ordersummary-title {
+  padding-top: 12px;
+  margin-bottom: 12px;
+}
+@media (min-width: 768px) {
+  #ordersummary div #ordersummary-content #ordersummary-title {
+    padding-top: 24px;
+  }
+}
+#ordersummary div #ordersummary-content #ordersummary-title h1 {
+  font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+  #ordersummary div #ordersummary-content #ordersummary-title h1 {
+    font-size: 2rem;
+  }
+}
+#ordersummary div #ordersummary-content #ordersummary-items ul {
+  margin-bottom: 4px;
+}
+#ordersummary div #ordersummary-content #ordersummary-items ul li {
+  display: flex;
+  padding-bottom: 12px;
+}
+#ordersummary div #ordersummary-content #ordersummary-items ul li h1 {
+  font-size: 0.75rem;
+  margin-top: 12px;
+}
+@media (min-width: 768px) {
+  #ordersummary div #ordersummary-content #ordersummary-items ul li h1 {
+    font-size: 1.5rem;
+    margin-top: 48px;
+  }
+}
+#ordersummary div #ordersummary-content #ordersummary-items ul li h3 {
+  font-size: 0.75rem;
+  font-weight: 200;
+  margin-top: 12px;
+}
+@media (min-width: 768px) {
+  #ordersummary div #ordersummary-content #ordersummary-items ul li h3 {
+    font-size: 1.5rem;
+    margin-top: 24px;
+  }
+}
+#ordersummary div #ordersummary-content #ordersummary-items ul li div {
+  width: 20%;
+}
+#ordersummary div #ordersummary-content #ordersummary-items ul li div img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+@media (min-width: 768px) {
+  #ordersummary div #ordersummary-content #ordersummary-items ul li div img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+}
+#ordersummary div #ordersummary-content #ordersummary-items ul li #p1 {
+  margin-left: auto;
+}
+#ordersummary div #ordersummary-content #ordersummary-total {
+  border-top: 1px solid black;
+  padding-top: 12px;
+}
+#ordersummary div #ordersummary-content #ordersummary-total ul {
+  padding-bottom: 24px;
+}
+#ordersummary div #ordersummary-content #ordersummary-total ul li {
+  display: flex;
+}
+#ordersummary div #ordersummary-content #ordersummary-total ul li h2 {
+  font-size: 0.75rem;
+  font-weight: 200;
+}
+@media (min-width: 768px) {
+  #ordersummary div #ordersummary-content #ordersummary-total ul li h2 {
+    font-size: 1.5rem;
+    margin-top: 24px;
+  }
+}
+#ordersummary div #ordersummary-content #ordersummary-total ul li h3 {
+  margin-left: auto;
+  font-size: 0.75rem;
+  font-weight: 200;
+}
+@media (min-width: 768px) {
+  #ordersummary div #ordersummary-content #ordersummary-total ul li h3 {
+    font-size: 1.5rem;
+    margin-top: 24px;
+  }
+}
+
+/* =============
     Payment&Summary
 ============= */
 @media (min-width: 768px) {
