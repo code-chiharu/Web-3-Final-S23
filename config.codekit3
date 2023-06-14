@@ -368,12 +368,12 @@
       "oAP" : "\/deploy\/checkout.html",
       "oF" : 2
     },
-    "\/dev\/content\/checkout\/payment.kit" : {
+    "\/dev\/content\/checkout\/payment&summary.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/checkout\/payment.html",
+      "oAP" : "\/dev\/content\/checkout\/payment&summary.html",
       "oF" : 0
     },
     "\/dev\/content\/checkout\/progress.kit" : {
@@ -382,14 +382,6 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/checkout\/progress.html",
-      "oF" : 0
-    },
-    "\/dev\/content\/checkout\/summary.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/content\/checkout\/summary.html",
       "oF" : 0
     },
     "\/dev\/content\/product\/accessories.kit" : {
@@ -673,7 +665,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/checkout\/_payment.scss" : {
+    "\/dev\/scss\/sections\/checkout\/_payment&summary.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -682,7 +674,7 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/checkout\/_payment.css",
+      "oAP" : "\/dev\/scss\/sections\/checkout\/_payment&summary.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -698,21 +690,6 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/scss\/sections\/checkout\/_progress.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/dev\/scss\/sections\/checkout\/_summary.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/checkout\/_summary.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,

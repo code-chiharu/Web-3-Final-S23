@@ -1,0 +1,189 @@
+/* =============
+    Payment&Summary
+============= */
+#paymentsummary{
+    div{
+        #payment{
+            div{
+                background-color: var(--AlmondBrown);
+                margin: 12px;
+        
+                display: grid;
+                grid-template-columns: 12px auto 12px;
+                grid-template-areas: ". content .";
+        
+                #payment-content{
+                    grid-area: content;
+                    padding-bottom: 12px;
+        
+                    #payment-title{
+                        padding-top: 12px;
+                        h1{
+                            font-size: rem-calc(24);
+                        }
+                    }
+        
+                #payment-inputs{
+                    #payment-card{
+                        margin-top: 4px;
+                        form{
+                            padding: 4px;
+                            input{
+            
+                            }
+                        }
+                    }
+        
+                    #payment-billing{
+                        margin-top: 12px;
+                        #payment-billing-check{
+                            display: flex;
+                            padding: 4px 0;
+        
+                            h3{
+                                font-size: rem-calc(12);
+                                padding-left: 4px;
+                                font-weight: 200;
+                            }
+                        }
+                        #payment-billing-street{
+                            form{
+                                padding: 4px;
+                                input{
+                
+                                }
+                            }
+                        }
+                        #payment-billing-apartment{
+                            display: flex;
+                            margin: 8px 0;
+        
+                            h3{
+                                font-size: rem-calc(12);
+                                padding-left: 4px;
+                                font-weight: 200;
+                                padding-top: 2px;
+                            }
+                            
+                        }
+        
+                        #payment-billing-zip{
+                            form{
+                                padding: 4px;
+                                input{
+                
+                                }
+                            }
+                        }
+                    }
+        
+                }    
+                }
+            }
+        }
+        
+        #summary{
+            div{
+                background-color: var(--AlmondBrown);
+                margin: 12px;
+        
+                display: grid;
+                grid-template-columns: 12px auto 12px;
+                grid-template-areas: ". content .";
+
+                #summary-content{
+                    grid-area: content;
+                    padding-bottom: 12px;
+        
+                    #summary-title{
+                        padding-top: 12px;
+                        margin-bottom: 12px;
+                        h1{
+                            font-size: rem-calc(24);
+                        }
+                    }
+                    #summary-items{
+                        ul{
+                            li{
+                                display: flex;
+                                // display: grid;
+                                // grid-template-columns: 3,1fr;
+                                // grid-template-areas: 
+                                // "i1 n1 p1"
+                                // "i2 n2 p2";
+
+                                h1{
+                                    font-size: rem-calc(12);
+                                }
+                                h3{
+                                    font-size: rem-calc(12);
+                                    font-weight: 200;
+                                }
+                                div{
+                                    img{
+                                        width: 80px;
+                                        height: auto;
+                                    }
+                                }
+
+                                #i1{
+                                    // grid-area: i1;
+                                }
+                                #n1{
+                                    // grid-area: n1;
+                                }
+                                #p1{
+                                    margin-left: auto;
+                                    // grid-area: p1;
+                                }
+                            }
+                        }
+                    }
+        
+                }
+
+                #summary-promo{
+                    border-top: 1px solid black;
+                    display: flex;
+                    padding: 12px 0;
+                    font-size: rem-calc(12);
+                }
+
+                #summary-gift{
+                    border-top: 1px solid black;
+                    display: flex;
+                    padding: 12px 0;
+                    font-size: rem-calc(12);
+                }
+
+                #summary-total{
+                    ul{
+                        li{
+                            display: flex;
+                            h2{
+                                font-size: rem-calc(12);
+                                font-weight: 200;
+                            }
+                            h3{
+                                margin-left: auto;
+                                font-size: rem-calc(12);
+                                font-weight: 200;
+                            }
+                        }
+                    }
+                }
+
+                #summary-button{
+                    margin-top: 12px;
+                    form{
+                        button{
+                            background-color: var(--SoftOat);
+                            h1{
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }   
+}

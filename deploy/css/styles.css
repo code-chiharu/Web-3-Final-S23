@@ -1217,65 +1217,135 @@ footer div h3 {
 }
 
 /* =============
-    Payment
+    Payment&Summary
 ============= */
-#payment div {
+#paymentsummary div #payment div {
   background-color: var(--AlmondBrown);
   margin: 12px;
   display: grid;
   grid-template-columns: 12px auto 12px;
   grid-template-areas: ". content .";
 }
-#payment div #payment-content {
+#paymentsummary div #payment div #payment-content {
   grid-area: content;
   padding-bottom: 12px;
 }
-#payment div #payment-content #payment-title {
+#paymentsummary div #payment div #payment-content #payment-title {
   padding-top: 12px;
 }
-#payment div #payment-content #payment-title h1 {
+#paymentsummary div #payment div #payment-content #payment-title h1 {
   font-size: 1.5rem;
 }
-#payment div #payment-content #payment-inputs #payment-card {
+#paymentsummary div #payment div #payment-content #payment-inputs #payment-card {
   margin-top: 4px;
 }
-#payment div #payment-content #payment-inputs #payment-card form {
+#paymentsummary div #payment div #payment-content #payment-inputs #payment-card form {
   padding: 4px;
 }
-#payment div #payment-content #payment-inputs #payment-billing {
+#paymentsummary div #payment div #payment-content #payment-inputs #payment-billing {
   margin-top: 12px;
 }
-#payment div #payment-content #payment-inputs #payment-billing #payment-billing-check {
+#paymentsummary div #payment div #payment-content #payment-inputs #payment-billing #payment-billing-check {
   display: flex;
   padding: 4px 0;
 }
-#payment div #payment-content #payment-inputs #payment-billing #payment-billing-check h3 {
+#paymentsummary div #payment div #payment-content #payment-inputs #payment-billing #payment-billing-check h3 {
   font-size: 0.75rem;
   padding-left: 4px;
   font-weight: 200;
 }
-#payment div #payment-content #payment-inputs #payment-billing #payment-billing-street form {
+#paymentsummary div #payment div #payment-content #payment-inputs #payment-billing #payment-billing-street form {
   padding: 4px;
 }
-#payment div #payment-content #payment-inputs #payment-billing #payment-billing-apartment {
+#paymentsummary div #payment div #payment-content #payment-inputs #payment-billing #payment-billing-apartment {
   display: flex;
   margin: 8px 0;
 }
-#payment div #payment-content #payment-inputs #payment-billing #payment-billing-apartment h3 {
+#paymentsummary div #payment div #payment-content #payment-inputs #payment-billing #payment-billing-apartment h3 {
   font-size: 0.75rem;
   padding-left: 4px;
   font-weight: 200;
   padding-top: 2px;
 }
-#payment div #payment-content #payment-inputs #payment-billing #payment-billing-zip form {
+#paymentsummary div #payment div #payment-content #payment-inputs #payment-billing #payment-billing-zip form {
   padding: 4px;
+}
+#paymentsummary div #summary div {
+  background-color: var(--AlmondBrown);
+  margin: 12px;
+  display: grid;
+  grid-template-columns: 12px auto 12px;
+  grid-template-areas: ". content .";
+}
+#paymentsummary div #summary div #summary-content {
+  grid-area: content;
+  padding-bottom: 12px;
+}
+#paymentsummary div #summary div #summary-content #summary-title {
+  padding-top: 12px;
+  margin-bottom: 12px;
+}
+#paymentsummary div #summary div #summary-content #summary-title h1 {
+  font-size: 1.5rem;
+}
+#paymentsummary div #summary div #summary-content #summary-items ul li {
+  display: flex;
+}
+#paymentsummary div #summary div #summary-content #summary-items ul li h1 {
+  font-size: 0.75rem;
+}
+#paymentsummary div #summary div #summary-content #summary-items ul li h3 {
+  font-size: 0.75rem;
+  font-weight: 200;
+}
+#paymentsummary div #summary div #summary-content #summary-items ul li div img {
+  width: 80px;
+  height: auto;
+}
+#paymentsummary div #summary div #summary-content #summary-items ul li #p1 {
+  margin-left: auto;
+}
+#paymentsummary div #summary div #summary-promo {
+  border-top: 1px solid black;
+  display: flex;
+  padding: 12px 0;
+  font-size: 0.75rem;
+}
+#paymentsummary div #summary div #summary-gift {
+  border-top: 1px solid black;
+  display: flex;
+  padding: 12px 0;
+  font-size: 0.75rem;
+}
+#paymentsummary div #summary div #summary-total ul li {
+  display: flex;
+}
+#paymentsummary div #summary div #summary-total ul li h2 {
+  font-size: 0.75rem;
+  font-weight: 200;
+}
+#paymentsummary div #summary div #summary-total ul li h3 {
+  margin-left: auto;
+  font-size: 0.75rem;
+  font-weight: 200;
+}
+#paymentsummary div #summary div #summary-button {
+  margin-top: 12px;
+}
+#paymentsummary div #summary div #summary-button form button {
+  background-color: var(--SoftOat);
 }
 /* =============
     Progress
 ============= */
 #progress {
   scroll-margin-top: 10000px;
-  padding-top: 80px;
+  padding-top: 60px;
+}
+@media (min-width: 768px) {
+  #progress {
+    padding-top: 80px;
+  }
 }
 #progress div {
   margin-left: 12px;

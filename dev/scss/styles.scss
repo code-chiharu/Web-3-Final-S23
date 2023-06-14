@@ -28,12 +28,12 @@
 @import "sections/product/_accessories";
 @import "sections/product/_review";
 
-// checkout page
+// thanku page
 @import "sections/thanku/_confirmation";
 @import "sections/thanku/_message";
 @import "sections/thanku/_ordersummary";
 
-// thanku page
-@import "sections/checkout/_payment";
+// checkout page
+@import "sections/checkout/_payment&summary";
 @import "sections/checkout/_progress";
-@import "sections/checkout/_summary";
+// @import "sections/checkout/_summary";

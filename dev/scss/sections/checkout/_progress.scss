@@ -3,7 +3,12 @@
 ============= */
 #progress{
     scroll-margin-top: 10000px;
-    padding-top: 80px;
+    padding-top: 60px;
+
+    @include md{
+        padding-top: 80px;
+
+    }
 
     div{
         margin-left: 12px;
