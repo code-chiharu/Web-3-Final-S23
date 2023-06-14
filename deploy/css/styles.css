@@ -865,7 +865,7 @@ footer {
   }
 }
 #productdetail div #overview #detail-menu ul {
-  margin-top: -325px;
+  margin-top: -275px;
 }
 @media (min-width: 768px) {
   #productdetail div #overview #detail-menu ul {
@@ -995,6 +995,12 @@ footer {
   width: 100%;
   transform: rotate(90deg);
 }
+@media (min-width: 768px) {
+  #specialty div #specialty-bgimg {
+    transform: rotate(360deg);
+    background-size: 80%;
+  }
+}
 #specialty div #specialty-button ul {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -1009,6 +1015,14 @@ footer {
 }
 #specialty div #specialty-button ul #b3 {
   grid-area: b3;
+  margin-bottom: 4px;
+}
+@media (min-width: 768px) {
+  #specialty div #specialty-button ul {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas: ". . . . b2 . . ." ". . . . . . b3 . " ". . b1 . . . . .";
+  }
 }
 #specialty div #specialty-button ul li {
   margin: 32px 0;
@@ -1016,4 +1030,34 @@ footer {
 #specialty div #specialty-button ul li form button {
   padding: 12px;
   background-color: var(--AlmondBrown);
+}
+#specialty div #specialty-text {
+  margin-bottom: 48px;
+}
+#specialty div #specialty-text ul li {
+  margin-top: 20px;
+}
+@media (min-width: 768px) {
+  #specialty div #specialty-text ul li {
+    margin-top: -80px;
+  }
+}
+#specialty div #specialty-text ul li h1 {
+  font-size: 1.5rem;
+  font-weight: 200;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #specialty div #specialty-text ul li h1 {
+    text-align: right;
+    margin-right: 300px;
+  }
+}
+#specialty div #specialty-text ul li p {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #specialty div #specialty-text ul li p {
+    text-align: right;
+  }
 }
