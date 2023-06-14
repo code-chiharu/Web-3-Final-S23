@@ -827,14 +827,29 @@ footer {
   display: flex;
   gap: 12px;
 }
+@media (min-width: 768px) {
+  #productdetail div #overview #detail-priceicon {
+    padding-left: 24px;
+  }
+}
 #productdetail div #overview #detail-priceicon h2 {
   padding: 4px;
   font-size: 1.25rem;
   background-color: var(--AlmondBrown);
 }
+@media (min-width: 768px) {
+  #productdetail div #overview #detail-priceicon h2 {
+    background-color: var(--white);
+  }
+}
 #productdetail div #overview #detail-priceicon form button {
   padding: 8px;
   background-color: var(--AlmondBrown);
+}
+@media (min-width: 768px) {
+  #productdetail div #overview #detail-priceicon form button {
+    background-color: var(--white);
+  }
 }
 #productdetail div #overview #detail-img {
   background-image: url("../img/tenonsawdetail.png");
@@ -850,6 +865,9 @@ footer {
     width: 85%;
   }
 }
+#productdetail div #overview #detail-menu ul {
+  margin-top: -325px;
+}
 @media (min-width: 768px) {
   #productdetail div #overview #detail-menu ul {
     display: grid;
@@ -864,7 +882,6 @@ footer {
 @media (min-width: 768px) {
   #productdetail div #overview #detail-menu ul li {
     padding-top: 48px;
-    grid-area: text;
   }
   #productdetail div #overview #detail-menu ul li #m1 {
     grid-area: m1;
@@ -900,4 +917,71 @@ footer {
     width: 140px;
     padding-left: 0px;
   }
+}
+#productdetail div #overview #detail-overview {
+  margin-top: 75px;
+  background-color: var(--AlmondBrown);
+}
+#productdetail div #overview #detail-overview h1 {
+  text-align: center;
+  padding-top: 12px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+#productdetail div #overview #detail-overview h2 {
+  text-align: center;
+  color: var(--white);
+  font-weight: 200;
+  padding-bottom: 12px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+#productdetail div #overview #detail-overview h3 {
+  text-align: center;
+  padding-bottom: 12px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+#productdetail div #overview #detail-overview p {
+  text-align: center;
+  padding-bottom: 24px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+#productdetail div #detail #detail-detail {
+  margin-top: 24px;
+}
+#productdetail div #detail #detail-detail h1 {
+  text-align: center;
+  background-color: var(--AlmondBrown);
+}
+#productdetail div #detail #detail-detail h2 {
+  text-align: right;
+  margin: 12px 0;
+  border-bottom: 1px solid black;
+}
+#productdetail div #detail #detail-detail #detail-indetail {
+  background-color: var(--AlmondBrown);
+  padding-bottom: 24px;
+}
+#productdetail div #detail #detail-detail #detail-indetail h1 {
+  padding-top: 12px;
+}
+#productdetail div #detail #detail-detail #detail-indetail h2 {
+  text-align: center;
+  margin: 0;
+  color: var(--white);
+  font-weight: 200;
+  margin-bottom: 12px;
+  border: none;
+}
+#productdetail div #detail #detail-detail #detail-indetail p {
+  text-align: center;
+  margin-left: 12px;
+  margin-right: 12px;
+  padding-bottom: 24px;
+}
+#productdetail div #detail #detail-detail #detail-indetail #detail-indetail-info {
+  margin: 12px;
+  background-color: var(--SoftOat);
 }
