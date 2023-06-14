@@ -978,3 +978,35 @@ footer {
 /* ==============
    Specialty
 ================= */
+#specialty div {
+  margin-top: 64px;
+}
+#specialty div #specialty-title h1 {
+  text-align: center;
+  background-color: var(--AlmondBrown);
+}
+#specialty div #specialty-bgimg {
+  background-image: url("../img/tenon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 40vh;
+  width: 100%;
+  transform: rotate(90deg);
+}
+#specialty div #specialty-button ul {
+  display: grid;
+  grid-template-columns: 6, 1fr;
+  grid-template-areas: ". . b1 . . ." ". . . . b2 ." ". . . b3 . . ";
+}
+#specialty div #specialty-button ul li form button {
+  background-color: var(--AlmondBrown);
+}
+#specialty div #specialty-button ul li #b1 {
+  grid-area: b1;
+}
+#specialty div #specialty-button ul li #b2 {
+  grid-area: b2;
+}
+#specialty div #specialty-button ul li #b3 {
+  grid-area: b3;
+}
