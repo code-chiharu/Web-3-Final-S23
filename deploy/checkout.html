@@ -67,14 +67,12 @@
                     <section id="payment-title">
                         <h1>3. Payment</h1>
                     </section>
-                        <section>
-                        <section>
+                    
+                    <section id="payment-inputs">
+                        <section id="payment-card">
                         <form action="#">
-                            <input type="button" name="Select Payment Method" placeholder="Select Payment Method">
-                            <button><i class="fa-thin fa-chevron-down"></i></button>
+                            <input type="select" name="Select Payment Method" placeholder="Select Payment Method">
                         </form>
-                        </section>
-                        <section>
                             <form action="#">
                                 <input type="number" name="Card Number" placeholder="Card Number">
                             </form>
@@ -85,43 +83,44 @@
                                 <input type="number" name="CVV" placeholder="CVV">
                             </form>
                         </section>
-                        <section>
+        
+                        <section id="payment-billing">
                             <h2>Billing Address</h2>
-                            <form action="#">
-                                <input type="checkbox" name="Billing address is same as shipping address">
-                            </form>
-                            <h3>Billing address is same as shipping address</h3>
-                        </section>
-                        <section>
-                            <form action="#">
-                                <input type="text" name="Street Address" placeholder="Street Address">
-                            </form>
-                            <form action="#">
-                                <input type="text" name="Country" placeholder="Country">
-                            </form>
-                        </section>
-                        <section>
-                            <form action="#">
-                                <button><i class="fa-thin fa-plus"></i></button>
-                            </form>
-                            <h3>Apartment, Building, Floor</h3>
-                        </section>
-                        <section>
-                            <form action="#">
-                                <input type="number" name="ZIP Code" placeholder="ZIP Code">
-                            </form>
-                            <form action="#">
-                                <input type="text" name="City" placeholder="City">
-                            </form>
-                            <form action="#">
-                                <input type="text" name="State" placeholder="State">
-                                <button><i class="fa-thin fa-chevron-down"></i></button>
-                            </form>
-                        </section>
-                        <section>
-                            <form action="#">
-                                <input type="number" name="Phone Number" placeholder="Phone Number">
-                            </form>
+                            <section id="payment-billing-check">
+                                <form action="#">
+                                    <input type="checkbox" name="Billing address is same as shipping address">
+                                </form>
+                                <h3>Billing address is same as shipping address</h3>
+                            </section>
+                            <section id="payment-billing-street">
+                                <form action="#">
+                                    <input type="text" name="Street Address" placeholder="Street Address">
+                                </form>
+                                <form action="#">
+                                    <input type="text" name="Country" placeholder="Country">
+                                </form>
+                            </section>
+        
+                            <section id="payment-billing-apartment">
+                                <form action="#">
+                                    <button><i class="fa-solid fa-plus"></i></button>
+                                </form>
+                                <h3>Apartment, Building, Floor</h3>
+                            </section>
+                            <section id="payment-billing-zip">
+                                <form action="#">
+                                    <input type="number" name="ZIP Code" placeholder="ZIP Code">
+                                </form>
+                                <form action="#">
+                                    <input type="text" name="City" placeholder="City">
+                                </form>
+                                <form action="#">
+                                    <input type="text" name="State" placeholder="State">
+                                </form>
+                                <form action="#">
+                                    <input type="number" name="Phone Number" placeholder="Phone Number">
+                                </form>
+                            </section>
                         </section>
                     </section>  
                 </section>

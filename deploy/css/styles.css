@@ -1228,6 +1228,47 @@ footer div h3 {
 }
 #payment div #payment-content {
   grid-area: content;
+  padding-bottom: 12px;
+}
+#payment div #payment-content #payment-title {
+  padding-top: 12px;
+}
+#payment div #payment-content #payment-title h1 {
+  font-size: 1.5rem;
+}
+#payment div #payment-content #payment-inputs #payment-card {
+  margin-top: 4px;
+}
+#payment div #payment-content #payment-inputs #payment-card form {
+  padding: 4px;
+}
+#payment div #payment-content #payment-inputs #payment-billing {
+  margin-top: 12px;
+}
+#payment div #payment-content #payment-inputs #payment-billing #payment-billing-check {
+  display: flex;
+  padding: 4px 0;
+}
+#payment div #payment-content #payment-inputs #payment-billing #payment-billing-check h3 {
+  font-size: 0.75rem;
+  padding-left: 4px;
+  font-weight: 200;
+}
+#payment div #payment-content #payment-inputs #payment-billing #payment-billing-street form {
+  padding: 4px;
+}
+#payment div #payment-content #payment-inputs #payment-billing #payment-billing-apartment {
+  display: flex;
+  margin: 8px 0;
+}
+#payment div #payment-content #payment-inputs #payment-billing #payment-billing-apartment h3 {
+  font-size: 0.75rem;
+  padding-left: 4px;
+  font-weight: 200;
+  padding-top: 2px;
+}
+#payment div #payment-content #payment-inputs #payment-billing #payment-billing-zip form {
+  padding: 4px;
 }
 /* =============
     Progress
