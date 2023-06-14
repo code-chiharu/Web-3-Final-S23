@@ -549,6 +549,11 @@ footer div #footer-logo {
   margin-right: auto;
   width: 50%;
 }
+@media (min-width: 768px) {
+  footer div #footer-logo {
+    width: 20%;
+  }
+}
 footer div nav ul {
   display: flex;
   gap: 8px;
@@ -1219,6 +1224,11 @@ footer div h3 {
 /* =============
     Payment&Summary
 ============= */
+@media (min-width: 768px) {
+  #paymentsummary div {
+    display: flex;
+  }
+}
 #paymentsummary div #payment div {
   background-color: var(--AlmondBrown);
   margin: 12px;
@@ -1270,6 +1280,9 @@ footer div h3 {
 #paymentsummary div #payment div #payment-content #payment-inputs #payment-billing #payment-billing-zip form {
   padding: 4px;
 }
+#paymentsummary div #summary {
+  width: 100%;
+}
 #paymentsummary div #summary div {
   background-color: var(--AlmondBrown);
   margin: 12px;
@@ -1288,19 +1301,36 @@ footer div h3 {
 #paymentsummary div #summary div #summary-content #summary-title h1 {
   font-size: 1.5rem;
 }
+#paymentsummary div #summary div #summary-content #summary-items ul {
+  margin-bottom: 4px;
+}
 #paymentsummary div #summary div #summary-content #summary-items ul li {
   display: flex;
+  padding-bottom: 12px;
 }
 #paymentsummary div #summary div #summary-content #summary-items ul li h1 {
   font-size: 0.75rem;
+  margin-top: 12px;
 }
 #paymentsummary div #summary div #summary-content #summary-items ul li h3 {
   font-size: 0.75rem;
   font-weight: 200;
+  margin-top: 12px;
+}
+#paymentsummary div #summary div #summary-content #summary-items ul li div {
+  width: 20%;
 }
 #paymentsummary div #summary div #summary-content #summary-items ul li div img {
-  width: 80px;
+  width: 400%;
   height: auto;
+  max-width: 400%;
+}
+@media (min-width: 768px) {
+  #paymentsummary div #summary div #summary-content #summary-items ul li div img {
+    width: 600%;
+    height: auto;
+    max-width: 600%;
+  }
 }
 #paymentsummary div #summary div #summary-content #summary-items ul li #p1 {
   margin-left: auto;
