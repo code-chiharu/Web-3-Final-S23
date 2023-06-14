@@ -51,76 +51,80 @@
             </nav>
     </header>
 
-    <section>
+    <section id="progress">
         <div>
             <h3>Shipping</h3>
+            <img src="img/5filleddots.svg" alt="">
             <h3>Delivery</h3>
-            <h3>Payment</h3>
+            <img src="img/5filleddots.svg" alt="">
+            <h3 id="progress-payment">Payment</h3>
         </div>
     </section>
     <!-- // make shapes in css rather than import every shape as svg/png? if so make those shapes into class variables or wutnot? -->
-        <section>
+        <section id="payment">
             <div>
-                <section>
-                    <h1>3. Payment</h1>
-                </section>
-                    <section>
-                    <section>
-                    <form action="#">
-                        <input type="button" name="Select Payment Method" placeholder="Select Payment Method">
-                        <button><i class="fa-thin fa-chevron-down"></i></button>
-                    </form>
+                <section id="payment-content">
+                    <section id="payment-title">
+                        <h1>3. Payment</h1>
                     </section>
-                    <section>
+                        <section>
+                        <section>
                         <form action="#">
-                            <input type="number" name="Card Number" placeholder="Card Number">
-                        </form>
-                        <form action="#">
-                            <input type="number" name="MM/YY" placeholder="MM/YY">
-                        </form>
-                        <form action="#">
-                            <input type="number" name="CVV" placeholder="CVV">
-                        </form>
-                    </section>
-                    <section>
-                        <h2>Billing Address</h2>
-                        <form action="#">
-                            <input type="checkbox" name="Billing address is same as shipping address">
-                        </form>
-                        <h3>Billing address is same as shipping address</h3>
-                    </section>
-                    <section>
-                        <form action="#">
-                            <input type="text" name="Street Address" placeholder="Street Address">
-                        </form>
-                        <form action="#">
-                            <input type="text" name="Country" placeholder="Country">
-                        </form>
-                    </section>
-                    <section>
-                        <form action="#">
-                            <button><i class="fa-thin fa-plus"></i></button>
-                        </form>
-                        <h3>Apartment, Building, Floor</h3>
-                    </section>
-                    <section>
-                        <form action="#">
-                            <input type="number" name="ZIP Code" placeholder="ZIP Code">
-                        </form>
-                        <form action="#">
-                            <input type="text" name="City" placeholder="City">
-                        </form>
-                        <form action="#">
-                            <input type="text" name="State" placeholder="State">
+                            <input type="button" name="Select Payment Method" placeholder="Select Payment Method">
                             <button><i class="fa-thin fa-chevron-down"></i></button>
                         </form>
-                    </section>
-                    <section>
-                        <form action="#">
-                            <input type="number" name="Phone Number" placeholder="Phone Number">
-                        </form>
-                    </section>
-                </section>  
+                        </section>
+                        <section>
+                            <form action="#">
+                                <input type="number" name="Card Number" placeholder="Card Number">
+                            </form>
+                            <form action="#">
+                                <input type="number" name="MM/YY" placeholder="MM/YY">
+                            </form>
+                            <form action="#">
+                                <input type="number" name="CVV" placeholder="CVV">
+                            </form>
+                        </section>
+                        <section>
+                            <h2>Billing Address</h2>
+                            <form action="#">
+                                <input type="checkbox" name="Billing address is same as shipping address">
+                            </form>
+                            <h3>Billing address is same as shipping address</h3>
+                        </section>
+                        <section>
+                            <form action="#">
+                                <input type="text" name="Street Address" placeholder="Street Address">
+                            </form>
+                            <form action="#">
+                                <input type="text" name="Country" placeholder="Country">
+                            </form>
+                        </section>
+                        <section>
+                            <form action="#">
+                                <button><i class="fa-thin fa-plus"></i></button>
+                            </form>
+                            <h3>Apartment, Building, Floor</h3>
+                        </section>
+                        <section>
+                            <form action="#">
+                                <input type="number" name="ZIP Code" placeholder="ZIP Code">
+                            </form>
+                            <form action="#">
+                                <input type="text" name="City" placeholder="City">
+                            </form>
+                            <form action="#">
+                                <input type="text" name="State" placeholder="State">
+                                <button><i class="fa-thin fa-chevron-down"></i></button>
+                            </form>
+                        </section>
+                        <section>
+                            <form action="#">
+                                <input type="number" name="Phone Number" placeholder="Phone Number">
+                            </form>
+                        </section>
+                    </section>  
+                </section>
             </div>
         </section>
     <section>
@@ -132,7 +136,7 @@
                         <ul>
                             <li>
                                 <section>
-                                    <img src="img/tenon.png" alt="">
+                                    <img src="img/tenon.png" alt="" class="large-images">
                                 </section>
                                 <section>
                                     <h1>Tenon Saw</h1>
@@ -144,7 +148,7 @@
                             </li>
                             <li>
                                 <section>
-                                    <img src="img/sawcase.png" alt="">
+                                    <img src="img/sawcase.png" alt="" class="large-images">
                                 </section>
                                 <section>
                                     <h1>16-inch Tenon Saw Case</h1>

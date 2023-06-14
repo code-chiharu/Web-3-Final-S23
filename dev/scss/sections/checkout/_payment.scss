@@ -1,0 +1,21 @@
+/* =============
+    Payment
+============= */
+#payment{
+    div{
+        background-color: var(--AlmondBrown);
+        margin: 12px;
+
+        display: grid;
+        grid-template-columns: 12px auto 12px;
+        grid-template-areas: ". content .";
+
+        #payment-content{
+            grid-area: content;
+
+            #payment-title{
+                // padding: 12px;
+            }
+        }
+    }
+}

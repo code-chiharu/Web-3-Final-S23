@@ -1215,3 +1215,57 @@ footer div h3 {
 #review div #review-spec p {
   margin: 0 12px;
 }
+
+/* =============
+    Payment
+============= */
+#payment div {
+  background-color: var(--AlmondBrown);
+  margin: 12px;
+  display: grid;
+  grid-template-columns: 12px auto 12px;
+  grid-template-areas: ". content .";
+}
+#payment div #payment-content {
+  grid-area: content;
+}
+/* =============
+    Progress
+============= */
+#progress {
+  scroll-margin-top: 10000px;
+  padding-top: 80px;
+}
+#progress div {
+  margin-left: 12px;
+  margin-top: 24px;
+  display: flex;
+  gap: 12px;
+}
+@media (min-width: 768px) {
+  #progress div {
+    gap: 40px;
+    margin-left: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+#progress div img {
+  width: 10%;
+  height: auto;
+}
+#progress div h3 {
+  padding: 4px;
+  display: inline;
+  border: 1px solid black;
+  opacity: 0.25;
+  font-size: 0.75rem;
+}
+@media (min-width: 768px) {
+  #progress div h3 {
+    font-size: 1.5rem;
+  }
+}
+#progress div #progress-payment {
+  opacity: 1;
+}
